@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply antialiased;
+  background-color: #fbf6ef;
+  color: #2b1f12;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-brand-800 px-6 py-3 text-sm font-bold text-white tracking-wide shadow-sm transition-colors hover:bg-brand-900 focus:outline-none focus:ring-2 focus:ring-brand-800 focus:ring-offset-2;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-md border px-6 py-3 text-sm font-bold tracking-wide transition-all focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .btn-accent {
+    @apply inline-flex items-center justify-center rounded-md bg-accent-500 px-6 py-3 text-sm font-bold text-white tracking-wide shadow-sm transition-colors hover:bg-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2;
+  }
+}
+
+/* Hero — light editorial background with warm amber/blue radial glows */
+.hero-bg {
+  background-color: #fbf6ef;
+  background-image:
+    radial-gradient(ellipse 50% 40% at 85% 15%, rgba(245,158,11,0.18), transparent 70%),
+    radial-gradient(ellipse 40% 50% at 10% 85%, rgba(30,58,138,0.12), transparent 70%);
+}
+.hero-deco-dots {
+  background-image: radial-gradient(circle, rgba(139,107,56,0.25) 1px, transparent 1.2px);
+  background-size: 18px 18px;
+}
+
+/* Eyebrow label with amber bar prefix */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #b45309;
+}
+.eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 2px;
+  background: #f59e0b;
+  flex-shrink: 0;
+}
+
+/* Product cards */
+.product-card {
+  transition: all 0.2s ease;
+  background: #fff;
+  border-color: #ebe0cc;
+}
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 34px -14px rgba(90,74,52,0.2);
+  border-color: #d97706;
+}
+.product-media {
+  background: linear-gradient(180deg, #fbf6ef 0%, #f0e6d4 100%);
+}
+
+/* Category cards */
+.cat-card {
+  background: #fff;
+  border-color: #ebe0cc;
+  transition: all 0.2s ease;
+}
+.cat-card:hover {
+  border-color: #d97706;
+  box-shadow: 0 12px 28px -14px rgba(90,74,52,0.2);
+}
+.cat-media {
+  background: linear-gradient(180deg, #fbf6ef 0%, #f0e6d4 100%);
+}
+
+/* Brand logo tiles */
+.brand-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+  padding: 1.75rem 1.5rem;
+  border: 1px solid #ebe0cc;
+  border-radius: 0.75rem;
+  background: #fff;
+  transition: all 0.2s;
+  text-align: center;
+  text-decoration: none;
+}
+.brand-tile:hover {
+  border-color: #d97706;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(217,119,6,0.12);
+}
+.brand-tile img {
+  max-height: 56px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+}
+.brand-tag {
+  display: block;
+  font-weight: 600;
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8a7658;
+  margin-top: 1rem;
+}

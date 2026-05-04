@@ -1,0 +1,3051 @@
+{
+  "version": "2.10",
+  "children": [
+    {
+      "type": "frame",
+      "id": "ROWzi",
+      "x": 0,
+      "y": 0,
+      "name": "Homepage",
+      "width": 1440,
+      "fill": "#F8F7F4",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "BHS0r",
+          "name": "Utility Bar",
+          "width": "fill_container",
+          "height": 36,
+          "fill": "#F3F4F6",
+          "padding": [
+            0,
+            48
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "CNepn",
+              "name": "tbLeft",
+              "fill": "#6B7280",
+              "content": "📍 5113 Pacific Hwy E, Fife WA 98424",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "mf97w",
+              "name": "tbRight",
+              "fill": "#6B7280",
+              "content": "(253) 555-0198   |   Mon–Sat 8am–6pm",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "0LUC7",
+          "name": "Navigation",
+          "width": "fill_container",
+          "height": 72,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "align": "outside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#E5E7EB"
+          },
+          "padding": [
+            0,
+            48
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "pkZ0L",
+              "name": "navLogo",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WPmq5",
+                  "name": "navLogoMark",
+                  "clip": true,
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#F59E0B",
+                  "cornerRadius": 8,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "7nMUv",
+                      "x": 10,
+                      "y": 5,
+                      "name": "logoLetter",
+                      "fill": "#FFFFFF",
+                      "content": "M",
+                      "fontFamily": "Inter",
+                      "fontSize": 24,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "BnGDY",
+                      "x": 11,
+                      "y": 32,
+                      "name": "logoAccent",
+                      "fill": "#F59E0B",
+                      "width": 18,
+                      "height": 3
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eYXMh",
+                  "name": "navLogoTextBlock",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uiANC",
+                      "name": "navLogoName",
+                      "fill": "#1E3A5F",
+                      "content": "METRO",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "900",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "VICip",
+                      "name": "navLogoDesc",
+                      "fill": "#6B7280",
+                      "content": "Restaurant Supply",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "3gHT2",
+              "name": "navLinks",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bl4pT",
+                  "name": "navL1",
+                  "fill": "#374151",
+                  "content": "Products",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "13kHJ",
+                  "name": "navL2",
+                  "fill": "#374151",
+                  "content": "About",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "7AtMw",
+                  "name": "navL3",
+                  "fill": "#374151",
+                  "content": "Contact",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "i1uM1",
+              "name": "navRight",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DhJe1",
+                  "name": "quoteListBtn",
+                  "fill": "#F9FAFB",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "HzMmG",
+                      "name": "quoteIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "clipboard-list",
+                      "iconFontFamily": "lucide",
+                      "fill": "#374151"
+                    },
+                    {
+                      "type": "text",
+                      "id": "1nOoo",
+                      "name": "quoteListT",
+                      "fill": "#374151",
+                      "content": "Quote List",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PeIMf",
+                  "name": "getQuoteBtn",
+                  "fill": "#F59E0B",
+                  "cornerRadius": 8,
+                  "padding": [
+                    10,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mQMbw",
+                      "name": "getQuoteT",
+                      "fill": "#111827",
+                      "content": "Get a Quote",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "i72aw",
+          "name": "Announcement Bar",
+          "width": 1440,
+          "height": 52,
+          "fill": "#F59E0B",
+          "gap": 24,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "wO1DS",
+              "name": "annTxt",
+              "fill": "#111827",
+              "content": "📍 We've moved! Visit our new showroom at 5113 Pacific Highway East, Unit 1B, Fife, WA 98424",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "VLGFh",
+              "name": "annBtn",
+              "fill": "#00000020",
+              "cornerRadius": 999,
+              "padding": [
+                6,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EFddX",
+                  "name": "annBtnT",
+                  "fill": "#111827",
+                  "content": "Get Directions →",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DdJEL",
+          "name": "Hero Section",
+          "clip": true,
+          "width": "fill_container",
+          "height": 640,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "TJ7uc",
+              "x": 0,
+              "y": 0,
+              "name": "heroBg",
+              "metadata": {
+                "type": "unsplash",
+                "username": "rm_reins",
+                "link": "https://unsplash.com/@rm_reins",
+                "author": "Roman"
+              },
+              "width": 1440,
+              "height": 640,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1767562678474-c92cec881bc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzYwNDUxNzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "ZaXVq",
+              "x": 0,
+              "y": 0,
+              "name": "heroOverlay",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 270,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#0F2744F0",
+                    "position": 0
+                  },
+                  {
+                    "color": "#0F2744E8",
+                    "position": 0.45
+                  },
+                  {
+                    "color": "#0F274490",
+                    "position": 0.75
+                  },
+                  {
+                    "color": "#0F274440",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 1440,
+              "height": 640
+            },
+            {
+              "type": "frame",
+              "id": "WQrt6",
+              "x": 80,
+              "y": 160,
+              "name": "heroContent",
+              "width": 620,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hXu9M",
+                  "name": "heroH1",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": 620,
+                  "content": "Commercial Grade Restaurant Equipment & Supplies",
+                  "lineHeight": 1.15,
+                  "fontFamily": "Inter",
+                  "fontSize": 56,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "S57ue",
+                  "name": "heroSub",
+                  "fill": "#D1D5DB",
+                  "textGrowth": "fixed-width",
+                  "width": 580,
+                  "content": "Top brands at affordable prices — with expert installation, warranty coverage, and free delivery included. Serving the Pacific Northwest from our Fife, Washington showroom.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "M40uC",
+                  "name": "heroBtns",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "rKk34",
+                      "name": "heroBtnA",
+                      "fill": "#F59E0B",
+                      "cornerRadius": 8,
+                      "padding": [
+                        14,
+                        28
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QkGkT",
+                          "name": "heroBtnAT",
+                          "fill": "#111827",
+                          "content": "Browse Products",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xl4O3",
+                      "name": "heroBtnB",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "outside",
+                        "thickness": 1.5,
+                        "fill": "#FFFFFF"
+                      },
+                      "padding": [
+                        13,
+                        27
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "4xT25",
+                          "name": "heroBtnBT",
+                          "fill": "#FFFFFF",
+                          "content": "Request a Quote",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VXrVu",
+              "x": 780,
+              "y": 80,
+              "name": "productShowcase",
+              "width": 580,
+              "height": 480,
+              "layout": "vertical",
+              "gap": 20,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zkIR5",
+                  "name": "productImage",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "grievek1610begur",
+                    "link": "https://unsplash.com/@grievek1610begur",
+                    "author": "Kevin Grieve"
+                  },
+                  "width": 420,
+                  "height": 360,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1776045359659.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 16
+                },
+                {
+                  "type": "frame",
+                  "id": "aTf18",
+                  "name": "deliveryBadge",
+                  "fill": "#F59E0B",
+                  "cornerRadius": 24,
+                  "gap": 8,
+                  "padding": [
+                    10,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "xalZp",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "truck",
+                      "iconFontFamily": "lucide",
+                      "fill": "#111827"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TOiD4",
+                      "fill": "#111827",
+                      "content": "Free Delivery + Installation Included",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "eCK2S",
+          "name": "Trust Bar",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "stroke": {
+            "align": "outside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#F3F4F6"
+          },
+          "padding": [
+            28,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "cEHUa",
+              "name": "trust1",
+              "fill": "#F9FAFB",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "outside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "gap": 16,
+              "padding": [
+                16,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "lw9Yt",
+                  "name": "t1i",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "truck",
+                  "iconFontFamily": "lucide",
+                  "fill": "#1D4ED8"
+                },
+                {
+                  "type": "frame",
+                  "id": "TP02Z",
+                  "name": "t1t",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IF4os",
+                      "name": "t1t1",
+                      "fill": "#111827",
+                      "content": "Free Delivery",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SvnNn",
+                      "name": "t1t2",
+                      "fill": "#6B7280",
+                      "content": "On all commercial equipment orders",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZRUkj",
+              "name": "trust2",
+              "fill": "#F9FAFB",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "outside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "gap": 16,
+              "padding": [
+                16,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "UgaC6",
+                  "name": "t2i",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "wrench",
+                  "iconFontFamily": "lucide",
+                  "fill": "#1D4ED8"
+                },
+                {
+                  "type": "frame",
+                  "id": "CFEMw",
+                  "name": "t2t",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "z34pm",
+                      "name": "t2t1",
+                      "fill": "#111827",
+                      "content": "Expert Installation",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NJOI6",
+                      "name": "t2t2",
+                      "fill": "#6B7280",
+                      "content": "Professional setup included",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "u1ni3",
+              "name": "trust3",
+              "fill": "#F9FAFB",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "outside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "gap": 16,
+              "padding": [
+                16,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "uLDdG",
+                  "name": "t3i",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "shield-check",
+                  "iconFontFamily": "lucide",
+                  "fill": "#1D4ED8"
+                },
+                {
+                  "type": "frame",
+                  "id": "S5Lpf",
+                  "name": "t3t",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "puecA",
+                      "name": "t3t1",
+                      "fill": "#111827",
+                      "content": "Warranty Included",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "IRxrw",
+                      "name": "t3t2",
+                      "fill": "#6B7280",
+                      "content": "Coverage on all products",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jlXc6",
+              "name": "trust4",
+              "fill": "#F9FAFB",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "outside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "gap": 16,
+              "padding": [
+                16,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "ncbwL",
+                  "name": "t4i",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "store",
+                  "iconFontFamily": "lucide",
+                  "fill": "#1D4ED8"
+                },
+                {
+                  "type": "frame",
+                  "id": "IeoCH",
+                  "name": "t4t",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "e1Uto",
+                      "name": "t4t1",
+                      "fill": "#111827",
+                      "content": "Local Showroom",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zox9w",
+                      "name": "t4t2",
+                      "fill": "#6B7280",
+                      "content": "Fife, WA — open Mon–Sat",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "a8zM1",
+          "name": "Product Categories",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            72,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "bhSnG",
+              "name": "catHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "K3PEl",
+                  "name": "catEye",
+                  "fill": "#F59E0B",
+                  "content": "SHOP BY CATEGORY",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "9W3WN",
+                  "name": "catTitle",
+                  "fill": "#111827",
+                  "content": "Shop by Category",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 36,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "6w29J",
+                  "name": "catSub",
+                  "fill": "#6B7280",
+                  "content": "Browse our full range of commercial kitchen equipment and supplies",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VcLeW",
+              "name": "catRow1",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "AtK8i",
+                  "name": "cc1",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "WQ6UT",
+                      "name": "cc1img",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "velvetcabana",
+                        "link": "https://unsplash.com/@velvetcabana",
+                        "author": "sadiq abdulmalik"
+                      },
+                      "width": "fill_container",
+                      "height": 160,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1776045542947.png",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "utQv5",
+                      "name": "cc1body",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": [
+                        20,
+                        20,
+                        24,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KGXsH",
+                          "name": "cc1t",
+                          "fill": "#111827",
+                          "content": "Refrigeration",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "SJNS4",
+                          "name": "cc1s",
+                          "fill": "#6B7280",
+                          "content": "Reach-in refrigerators & freezers, undercounters, and chef bases",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sfRPS",
+                          "name": "cc1l",
+                          "fill": "#1E3A5F",
+                          "content": "Shop Now →",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TRxha",
+                  "name": "cc2",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pv1Iw",
+                      "name": "cc2img",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "andysartori",
+                        "link": "https://unsplash.com/@andysartori",
+                        "author": "Andy Sartori"
+                      },
+                      "width": "fill_container",
+                      "height": 160,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1776045812304.png",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "p6mTe",
+                      "name": "cc2body",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": [
+                        20,
+                        20,
+                        24,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CZe1n",
+                          "name": "cc2t",
+                          "fill": "#111827",
+                          "content": "Cooking Equipment",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Fpyob",
+                          "name": "cc2s",
+                          "fill": "#6B7280",
+                          "content": "Commercial gas ranges, fryers, broilers, and griddles",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TbBRk",
+                          "name": "cc2l",
+                          "fill": "#1E3A5F",
+                          "content": "Shop Now →",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4AS4R",
+                  "name": "cc3",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Z8vcQ",
+                      "name": "cc3img",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "optiny",
+                        "link": "https://unsplash.com/@optiny",
+                        "author": "Raymond Yeung"
+                      },
+                      "width": "fill_container",
+                      "height": 160,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1776045598916.png",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OR2o8",
+                      "name": "cc3body",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": [
+                        20,
+                        20,
+                        24,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "0VFvz",
+                          "name": "cc3t",
+                          "fill": "#111827",
+                          "content": "Prep Tables",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RJxuT",
+                          "name": "cc3s",
+                          "fill": "#6B7280",
+                          "content": "Refrigerated sandwich, mega top, and pizza prep tables",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "F5Lpx",
+                          "name": "cc3l",
+                          "fill": "#1E3A5F",
+                          "content": "Shop Now →",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "1HWUN",
+              "name": "catRow2",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qyJO3",
+                  "name": "cc4",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "USrzT",
+                      "name": "cc4img",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "deviyahya",
+                        "link": "https://unsplash.com/@deviyahya",
+                        "author": "Devi Puspita Amartha Yahya"
+                      },
+                      "width": "fill_container",
+                      "height": 160,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1776045535291.png",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OcoYU",
+                      "name": "cc4body",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": [
+                        20,
+                        20,
+                        24,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gwNXI",
+                          "name": "cc4t",
+                          "fill": "#111827",
+                          "content": "Commercial Ice Makers",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fLRKK",
+                          "name": "cc4s",
+                          "fill": "#6B7280",
+                          "content": "Undercounter ice machines, modular ice makers, and storage bins",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "f8ACx",
+                          "name": "cc4l",
+                          "fill": "#1E3A5F",
+                          "content": "Shop Now →",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "yq5Lr",
+                  "name": "cc5",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "b5Fl3",
+                      "name": "cc5img",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "tetrakiss",
+                        "link": "https://unsplash.com/@tetrakiss",
+                        "author": "Arseny Togulev"
+                      },
+                      "width": "fill_container",
+                      "height": 160,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1776045551231.png",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "3bvkz",
+                      "name": "cc5body",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": [
+                        20,
+                        20,
+                        24,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SYfsD",
+                          "name": "cc5t",
+                          "fill": "#111827",
+                          "content": "Food Prep Equipment",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "IyzOk",
+                          "name": "cc5s",
+                          "fill": "#6B7280",
+                          "content": "Planetary mixers, meat slicers, and meat grinders",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "z8pAa",
+                          "name": "cc5l",
+                          "fill": "#1E3A5F",
+                          "content": "Shop Now →",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "a7IPz",
+                  "name": "cc6",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Pvi0c",
+                      "name": "cc6img",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "stbuddyp",
+                        "link": "https://unsplash.com/@stbuddyp",
+                        "author": "Buddy AN"
+                      },
+                      "width": "fill_container",
+                      "height": 160,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1776045592261.png",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BnERp",
+                      "name": "cc6body",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": [
+                        20,
+                        20,
+                        24,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "0TQ1Z",
+                          "name": "cc6t",
+                          "fill": "#111827",
+                          "content": "Sinks",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MAeHX",
+                          "name": "cc6s",
+                          "fill": "#6B7280",
+                          "content": "Compartment sinks, hand sinks, mop sinks, and accessories",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZLiDO",
+                          "name": "cc6l",
+                          "fill": "#1E3A5F",
+                          "content": "Shop Now →",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "d7swo",
+                  "name": "cc7",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Xc5Re",
+                      "name": "cc7img",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "alegi__",
+                        "link": "https://unsplash.com/@alegi__",
+                        "author": "Alexandros Giannakakis"
+                      },
+                      "width": "fill_container",
+                      "height": 160,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1776045611138.png",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BVRa8",
+                      "name": "cc7body",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": [
+                        20,
+                        20,
+                        24,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rdxvI",
+                          "name": "cc7t",
+                          "fill": "#111827",
+                          "content": "Work Tables & Shelving",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LANxw",
+                          "name": "cc7s",
+                          "fill": "#6B7280",
+                          "content": "Stainless steel work tables, equipment stands, and wire shelving",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AxRbm",
+                          "name": "cc7l",
+                          "fill": "#1E3A5F",
+                          "content": "Shop Now →",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rREr7",
+          "name": "Featured Products",
+          "width": "fill_container",
+          "fill": "#F9FAFB",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            72,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "jP99q",
+              "name": "featHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SDqSH",
+                  "name": "featEye",
+                  "fill": "#F59E0B",
+                  "content": "FEATURED PRODUCTS",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "EXbGI",
+                  "name": "featTitle",
+                  "fill": "#111827",
+                  "content": "Featured Products",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 36,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "nrXqv",
+                  "name": "featSub",
+                  "fill": "#6B7280",
+                  "content": "Top picks from our best-selling commercial kitchen equipment",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dIv07",
+              "name": "featGrid",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PimRb",
+                  "name": "pc1",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ppPJM",
+                      "name": "p1img",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=500&q=80&auto=format&fit=crop",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mk8CZ",
+                      "name": "p1body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        16,
+                        16,
+                        20,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DJ4BU",
+                          "name": "p1br",
+                          "fill": "#9CA3AF",
+                          "content": "ATOSA",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "XrNHm",
+                          "name": "p1nm",
+                          "fill": "#111827",
+                          "textGrowth": "fixed-width",
+                          "width": 260,
+                          "content": "MBF8505GR — 1-Door Reach-In Refrigerator",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fjnmt",
+                          "name": "p1pr",
+                          "fill": "#111827",
+                          "content": "$2,204.00",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "bKdYq",
+                          "name": "p1btn",
+                          "width": "fill_container",
+                          "fill": "#111827",
+                          "cornerRadius": 6,
+                          "padding": [
+                            10,
+                            16
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "rGZ6B",
+                              "name": "p1btnT",
+                              "fill": "#FFFFFF",
+                              "content": "Add to Quote",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IaYOs",
+                  "name": "pc2",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "EE5a0",
+                      "name": "p2img",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=500&q=80&auto=format&fit=crop",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WsGfb",
+                      "name": "p2body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        16,
+                        16,
+                        20,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wBsXk",
+                          "name": "p2br",
+                          "fill": "#9CA3AF",
+                          "content": "ATOSA",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "FAbiK",
+                          "name": "p2nm",
+                          "fill": "#111827",
+                          "textGrowth": "fixed-width",
+                          "width": 260,
+                          "content": "AGR-6B — 36\" Gas Range with Six Open Burners",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "BcJ0t",
+                          "name": "p2pr",
+                          "fill": "#111827",
+                          "content": "$1,864.00",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "G1xy0",
+                          "name": "p2btn",
+                          "width": "fill_container",
+                          "fill": "#111827",
+                          "cornerRadius": 6,
+                          "padding": [
+                            10,
+                            16
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "68JHU",
+                              "name": "p2btnT",
+                              "fill": "#FFFFFF",
+                              "content": "Add to Quote",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kHMDP",
+                  "name": "pc3",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ZhVTq",
+                      "name": "p3img",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=500&q=80&auto=format&fit=crop",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Pv9Oh",
+                      "name": "p3body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        16,
+                        16,
+                        20,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WuCJq",
+                          "name": "p3br",
+                          "fill": "#9CA3AF",
+                          "content": "ATOSA",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "5Cixq",
+                          "name": "p3nm",
+                          "fill": "#111827",
+                          "textGrowth": "fixed-width",
+                          "width": 260,
+                          "content": "YR280-AP-161 — Ice Maker with Bin (280 lb/day)",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Lkh7t",
+                          "name": "p3pr",
+                          "fill": "#111827",
+                          "content": "$2,562.00",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "g48dh",
+                          "name": "p3btn",
+                          "width": "fill_container",
+                          "fill": "#111827",
+                          "cornerRadius": 6,
+                          "padding": [
+                            10,
+                            16
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "iyqin",
+                              "name": "p3btnT",
+                              "fill": "#FFFFFF",
+                              "content": "Add to Quote",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YT04m",
+                  "name": "pc4",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "JLvVJ",
+                      "name": "p4img",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1556909211-36987daf7b4d?w=500&q=80&auto=format&fit=crop",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "EoZLm",
+                      "name": "p4body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        16,
+                        16,
+                        20,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "q5gDj",
+                          "name": "p4br",
+                          "fill": "#9CA3AF",
+                          "content": "ATOSA",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "tMduJ",
+                          "name": "p4nm",
+                          "fill": "#111827",
+                          "textGrowth": "fixed-width",
+                          "width": 260,
+                          "content": "PPM-20 — 20 Qt Commercial Planetary Mixer",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "febL5",
+                          "name": "p4pr",
+                          "fill": "#111827",
+                          "content": "$1,287.00",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "0DzmP",
+                          "name": "p4btn",
+                          "width": "fill_container",
+                          "fill": "#111827",
+                          "cornerRadius": 6,
+                          "padding": [
+                            10,
+                            16
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "vHP2T",
+                              "name": "p4btnT",
+                              "fill": "#FFFFFF",
+                              "content": "Add to Quote",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xmjK7",
+              "name": "viewRow",
+              "width": "fill_container",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ADC7M",
+                  "name": "viewBtn",
+                  "fill": "#111827",
+                  "cornerRadius": 8,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gER4W",
+                      "name": "viewBtnT",
+                      "fill": "#FFFFFF",
+                      "content": "View All Products",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XqO4e",
+          "name": "Why Choose Us",
+          "width": "fill_container",
+          "fill": "#EEF2F7",
+          "gap": 80,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "FCkiq",
+              "name": "whyLeft",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "S2OzQ",
+                  "name": "whyEye",
+                  "fill": "#D97706",
+                  "content": "WHY METRO RESTAURANT SUPPLY",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "6QJ8E",
+                  "name": "whyTitle",
+                  "fill": "#111827",
+                  "textGrowth": "fixed-width",
+                  "width": 500,
+                  "content": "Built for Restaurants, Not Big Box Stores",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "jzLMB",
+                  "name": "whySub",
+                  "fill": "#6B7280",
+                  "textGrowth": "fixed-width",
+                  "width": 500,
+                  "content": "We specialize exclusively in commercial foodservice equipment. Our team knows what works in a real kitchen — and we back every sale with genuine service.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "0B3H7",
+                  "name": "whyPoints",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "o6kTm",
+                      "name": "pt1",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "8g5Xq",
+                          "name": "wp1i",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "circle-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "#D97706"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zgGNK",
+                          "name": "wp1t",
+                          "fill": "#374151",
+                          "content": "30+ years serving Pacific Northwest restaurants",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fbcgC",
+                      "name": "pt2",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Wd0LE",
+                          "name": "wp2i",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "circle-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "#D97706"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VEd0B",
+                          "name": "wp2t",
+                          "fill": "#374151",
+                          "content": "Same-day quotes and fast order fulfillment",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "4G2a2",
+                      "name": "pt3",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "7PtlH",
+                          "name": "wp3i",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "circle-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "#D97706"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YymLv",
+                          "name": "wp3t",
+                          "fill": "#374151",
+                          "content": "In-house service team for repairs & maintenance",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "jg0sk",
+                  "name": "whyBtn",
+                  "fill": "#F59E0B",
+                  "cornerRadius": 8,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "5nuoe",
+                      "name": "whyBtnT",
+                      "fill": "#111827",
+                      "content": "Visit Our Showroom →",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "4Gc3e",
+              "name": "whyRight",
+              "metadata": {
+                "type": "unsplash",
+                "username": "laryssaares",
+                "link": "https://unsplash.com/@laryssaares",
+                "author": "Laryssa Ares"
+              },
+              "width": 480,
+              "height": 380,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1776046077059.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 16
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "neP4h",
+          "name": "FAQ Section",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            72,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "cVmMK",
+              "name": "faqHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kZEhL",
+                  "name": "faqEye",
+                  "fill": "#D97706",
+                  "content": "FREQUENTLY ASKED QUESTIONS",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "zBFYY",
+                  "name": "faqTitle",
+                  "fill": "#111827",
+                  "content": "Got Questions? We've Got Answers.",
+                  "fontFamily": "Inter",
+                  "fontSize": 32,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "Bysh3",
+                  "name": "faqSub",
+                  "fill": "#6B7280",
+                  "content": "Everything you need to know about our products, services, and policies.",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ELsDt",
+              "name": "faqList",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Bc6Np",
+                  "name": "fq1",
+                  "width": "fill_container",
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "jwhHh",
+                      "name": "fq1row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WUtns",
+                          "name": "fq1q",
+                          "fill": "#111827",
+                          "content": "Do you offer free delivery on restaurant equipment?",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "oXwAo",
+                          "name": "fq1i",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "chevron-down",
+                          "iconFontFamily": "lucide",
+                          "fill": "#9CA3AF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "tNgo9",
+                      "name": "fq1a",
+                      "fill": "#6B7280",
+                      "textGrowth": "fixed-width",
+                      "width": 1100,
+                      "content": "Yes! Metro Restaurant Supply offers free local delivery within the greater Tacoma and Seattle metro area on orders over $500.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ZhpWx",
+                  "name": "fq2",
+                  "width": "fill_container",
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "cwlMR",
+                      "name": "fq2row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "BYG8n",
+                          "name": "fq2q",
+                          "fill": "#111827",
+                          "content": "What brands of commercial kitchen equipment do you carry?",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "UruCo",
+                          "name": "fq2i",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "chevron-down",
+                          "iconFontFamily": "lucide",
+                          "fill": "#9CA3AF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "KKwRR",
+                      "name": "fq2a",
+                      "fill": "#6B7280",
+                      "textGrowth": "fixed-width",
+                      "width": 1100,
+                      "content": "We are an authorized Atosa dealer carrying their full line of commercial refrigeration, cooking equipment, prep tables, ice makers, food prep equipment, sinks, and work tables.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hisnB",
+                  "name": "fq3",
+                  "width": "fill_container",
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dAqyH",
+                      "name": "fq3row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SQW5g",
+                          "name": "fq3q",
+                          "fill": "#111827",
+                          "content": "Do you provide installation for restaurant equipment?",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "vkX1a",
+                          "name": "fq3i",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "chevron-down",
+                          "iconFontFamily": "lucide",
+                          "fill": "#9CA3AF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "rGYi1",
+                      "name": "fq3a",
+                      "fill": "#6B7280",
+                      "textGrowth": "fixed-width",
+                      "width": 1100,
+                      "content": "Absolutely. We offer professional installation services for all major equipment purchases. Our technicians ensure your equipment is set up correctly and ready to use on day one.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "x2lio",
+                  "name": "fq4",
+                  "width": "fill_container",
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#E5E7EB"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "r9hSC",
+                      "name": "fq4row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KfKS2",
+                          "name": "fq4q",
+                          "fill": "#111827",
+                          "content": "Can I visit your showroom before purchasing?",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "VzsTq",
+                          "name": "fq4i",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "chevron-down",
+                          "iconFontFamily": "lucide",
+                          "fill": "#9CA3AF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "yRJDx",
+                      "name": "fq4a",
+                      "fill": "#6B7280",
+                      "textGrowth": "fixed-width",
+                      "width": 1100,
+                      "content": "Of course! Our Fife, WA showroom is open Monday through Saturday. Come see our equipment in person, ask questions, and get expert advice. Walk-ins are welcome.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xwcD5",
+          "name": "CTA Section",
+          "clip": true,
+          "width": "fill_container",
+          "height": 360,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "ViYTd",
+              "x": 0,
+              "y": 0,
+              "name": "ctaBg",
+              "fill": "#111827",
+              "width": 1440,
+              "height": 360
+            },
+            {
+              "type": "frame",
+              "id": "PvDwj",
+              "x": 370,
+              "y": 60,
+              "name": "ctaContent",
+              "width": 700,
+              "layout": "vertical",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "0Sq2q",
+                  "name": "ctaEye",
+                  "fill": "#F59E0B",
+                  "content": "READY TO UPGRADE YOUR KITCHEN?",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "MFgMq",
+                  "name": "ctaTitle",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "Get a Free Quote for Your Restaurant",
+                  "lineHeight": 1.2,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 36,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "BZWmS",
+                  "name": "ctaSub",
+                  "fill": "#9CA3AF",
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "Tell us what you need and our team will put together a custom equipment package — with delivery, installation, and warranty included.",
+                  "lineHeight": 1.6,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "Af8vO",
+                  "name": "ctaBtns",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "gNZmX",
+                      "name": "ctaBtn1",
+                      "fill": "#F59E0B",
+                      "cornerRadius": 8,
+                      "padding": [
+                        14,
+                        28
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "71ZgI",
+                          "name": "ctaBtn1T",
+                          "fill": "#111827",
+                          "content": "Request a Free Quote",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "aBlIE",
+                      "name": "ctaBtn2",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "outside",
+                        "thickness": 1.5,
+                        "fill": "#FFFFFF"
+                      },
+                      "padding": [
+                        13,
+                        27
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "4JxIm",
+                          "name": "ctaBtn2T",
+                          "fill": "#FFFFFF",
+                          "content": "Call (253) 555-0198",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bpmeO",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#F3F4F6",
+          "stroke": {
+            "align": "outside",
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#E5E7EB"
+          },
+          "gap": 64,
+          "padding": [
+            56,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "g8Wy8",
+              "name": "ftBrand",
+              "width": 280,
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "l5l29",
+                  "name": "ftLogo",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "VCan7",
+                      "name": "logoIcon",
+                      "clip": true,
+                      "width": 32,
+                      "height": 32,
+                      "fill": "#1E3A5F",
+                      "cornerRadius": 6,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zaXh1",
+                          "x": 8,
+                          "y": 3,
+                          "fill": "#FFFFFF",
+                          "content": "M",
+                          "fontFamily": "Inter",
+                          "fontSize": 19,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 1.5,
+                          "id": "rEhF5",
+                          "x": 9,
+                          "y": 26,
+                          "fill": "#F59E0B",
+                          "width": 14,
+                          "height": 2.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HbIZR",
+                      "name": "logoText",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EyYw2",
+                          "fill": "#1E3A5F",
+                          "content": "METRO",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "900",
+                          "letterSpacing": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "nhBp0",
+                          "fill": "#6B7280",
+                          "content": "Restaurant Supply",
+                          "fontFamily": "Inter",
+                          "fontSize": 9,
+                          "fontWeight": "600",
+                          "letterSpacing": 0.5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "STekQ",
+                  "name": "ftDesc",
+                  "fill": "#6B7280",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Your trusted Atosa dealer serving Pacific Northwest restaurants since 1993. Authorized dealer with factory-direct pricing.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "WZlMr",
+                  "name": "ftAddr",
+                  "fill": "#6B7280",
+                  "content": "5113 Pacific Hwy E, Unit 1B\nFife, WA 98424\n(253) 555-0198",
+                  "lineHeight": 1.8,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WM6vq",
+              "name": "ftCats",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Fb7a6",
+                  "name": "ftCatsH",
+                  "fill": "#111827",
+                  "content": "Categories",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "P1gNz",
+                  "name": "ftc1",
+                  "fill": "#6B7280",
+                  "content": "Refrigeration",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "1lRbQ",
+                  "name": "ftc2",
+                  "fill": "#6B7280",
+                  "content": "Cooking Equipment",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "xnHbX",
+                  "name": "ftc3",
+                  "fill": "#6B7280",
+                  "content": "Prep Tables",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "4SecN",
+                  "name": "ftc4",
+                  "fill": "#6B7280",
+                  "content": "Commercial Ice Makers",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "t169h",
+                  "name": "ftc5",
+                  "fill": "#6B7280",
+                  "content": "Food Prep Equipment",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "8EdEo",
+                  "name": "ftc6",
+                  "fill": "#6B7280",
+                  "content": "Sinks",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "wnkWb",
+                  "name": "ftc7",
+                  "fill": "#6B7280",
+                  "content": "Work Tables & Shelving",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "a7JLD",
+              "name": "ftInfo",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "y9Qa5",
+                  "name": "ftInfoH",
+                  "fill": "#111827",
+                  "content": "Company",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "JHAoc",
+                  "name": "fti1",
+                  "fill": "#6B7280",
+                  "content": "About Us",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ohhmT",
+                  "name": "fti2",
+                  "fill": "#6B7280",
+                  "content": "Contact",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "fCyRD",
+                  "name": "fti3",
+                  "fill": "#6B7280",
+                  "content": "Request a Quote",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "zPh3C",
+                  "name": "fti4",
+                  "fill": "#6B7280",
+                  "content": "Mon–Sat 8am–6pm",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "BSkzp",
+      "x": 6000,
+      "y": 0,
+      "name": "ASO 1 - Panoramic Left",
+      "width": 1290,
+      "height": 2796,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#E8D5C4",
+            "position": 0
+          },
+          {
+            "color": "#D4A98A",
+            "position": 0.4
+          },
+          {
+            "color": "#D6938A",
+            "position": 0.7
+          },
+          {
+            "color": "#C2847E",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "vertical",
+      "gap": 40,
+      "padding": 80,
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "16hy4",
+          "name": "hook-text",
+          "fill": "#FFFFFF",
+          "textGrowth": "fixed-width",
+          "width": 1100,
+          "content": "The app for\naesthetic treatments.",
+          "lineHeight": 1.15,
+          "textAlign": "center",
+          "fontFamily": "DM Serif Display",
+          "fontSize": 96,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "joBZ2",
+      "x": 7390,
+      "y": 0,
+      "name": "ASO 2 - Panoramic Right (Plan)",
+      "metadata": {
+        "type": "unsplash",
+        "username": "getswello",
+        "link": "https://unsplash.com/@getswello",
+        "author": "Swello"
+      },
+      "width": 1290,
+      "height": 2796,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "https://images.unsplash.com/photo-1647964186628-b1305d8f2e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzYxMDEzMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+        "mode": "fill"
+      },
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "7WZZS",
+      "x": 8780,
+      "y": 0,
+      "name": "ASO 3 - Treatment Plan Detail",
+      "width": 1290,
+      "height": 2796,
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "hcKbi",
+      "x": 10170,
+      "y": 0,
+      "name": "ASO 4 - Research Treatment",
+      "width": 1290,
+      "height": 2796,
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "Pjaly",
+      "x": 11560,
+      "y": 0,
+      "name": "ASO 5 - Clinics",
+      "width": 1290,
+      "height": 2796,
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "Jf3Zu",
+      "x": 12950,
+      "y": 0,
+      "name": "ASO 6 - Book",
+      "width": 1290,
+      "height": 2796,
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "CoNvU",
+      "x": 14340,
+      "y": 0,
+      "name": "ASO 7 - AI Scan",
+      "width": 1290,
+      "height": 2796,
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "RT0wj",
+      "x": 15730,
+      "y": 0,
+      "name": "ASO 8 - Social Proof",
+      "width": 1290,
+      "height": 2796,
+      "layout": "vertical",
+      "padding": 80,
+      "justifyContent": "center",
+      "alignItems": "center"
+    }
+  ]
+}
