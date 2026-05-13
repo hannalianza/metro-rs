@@ -93,18 +93,17 @@ export default function HomePage() {
 
           {/* Left: copy */}
           <div className="lg:col-span-6">
-            <div className="eyebrow mb-6">Serving the Pacific Northwest · Est. 1985</div>
+            <div className="eyebrow mb-6">A Fife, WA Family Business · Since 1985</div>
             <h1 className="text-[2.5rem] font-extrabold leading-[1.05] tracking-tight text-warm-900 sm:text-5xl lg:text-[4.2rem]">
-              Outfit your kitchen with{" "}
+              Everything your kitchen needs, from{" "}
               <span className="relative inline-block">
-                <span className="relative z-10">gear that works.</span>
+                <span className="relative z-10">people who know it.</span>
                 <span className="absolute inset-x-0 bottom-1 h-3 bg-amber-300/70 lg:h-4" aria-hidden="true" />
               </span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-warm-700">
-              Commercial kitchen equipment and restaurant supplies from{" "}
-              <strong className="font-semibold text-warm-900">Turbo Air, Atosa, Winco, and 5Star</strong>{" "}
-              — delivered, installed, and backed by warranty. Shop from our Fife, WA showroom.
+              Commercial refrigeration, ranges, prep tables, ice machines, sinks, and smallwares from{" "}
+              <strong className="font-semibold text-warm-900">Turbo Air, Atosa, Winco, and 5Star</strong> — delivered, installed, and warrantied by our Fife team. The same people who&rsquo;ve helped PNW restaurants open and stay running for forty years.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/contact" className="btn-accent">Request a Free Quote →</Link>

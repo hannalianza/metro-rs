@@ -87,7 +87,6 @@ export default function ContactPage() {
                       <option value="quote">Request a Quote</option>
                       <option value="product">Product Question</option>
                       <option value="order">Order Inquiry</option>
-                      <option value="design">Kitchen Design Consultation</option>
                       <option value="other">Other</option>
                     </select>
                   </div>
