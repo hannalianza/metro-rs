@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { getCart, getCartCount } from "@/data/cart";
-import { categories } from "@/data/products";
+import { categories, getBrands } from "@/data/products";
 
 // Category icons mapped by slug
 const categoryIcons: Record<string, string> = {
@@ -14,11 +14,22 @@ const categoryIcons: Record<string, string> = {
   "food-prep": "⚙️",
   "sinks": "🚿",
   "work-tables": "🔩",
+  "walk-in-coolers-freezers": "🏠",
+  "glass-door-merchandisers": "🛒",
+};
+
+const brandLogos: Record<string, string> = {
+  "Atosa": "/brands/atosa.png",
+  "Turbo Air": "/brands/turbo-air.jpg",
+  "WinCo": "/brands/winco.png",
+  "5 Star": "/brands/5star.png",
 };
 
 export default function Header() {
+  const brands = getBrands();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  const [mobileBrandsOpen, setMobileBrandsOpen] = useState(false);
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
   const [cartCount, setCartCount] = useState(0);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -95,46 +106,76 @@ export default function Header() {
 
             {/* Dropdown panel */}
             {productsDropdownOpen && (
-              <div className="absolute left-1/2 top-full z-50 mt-2 w-[480px] -translate-x-1/2 rounded-xl border border-gray-100 bg-white shadow-xl">
+              <div className="absolute left-1/2 top-full z-50 mt-2 w-[600px] -translate-x-1/2 rounded-xl border border-gray-100 bg-white shadow-xl">
                 {/* Arrow */}
                 <div className="absolute -top-1.5 left-1/2 -translate-x-1/2">
                   <div className="h-3 w-3 rotate-45 border-l border-t border-gray-100 bg-white" />
                 </div>
 
-                <div className="p-4">
-                  <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400">
-                    Browse by Category
-                  </p>
-                  <div className="grid grid-cols-2 gap-1">
-                    {categories.map((cat) => (
-                      <Link
-                        key={cat.slug}
-                        href={`/products?category=${cat.slug}`}
-                        onClick={() => setProductsDropdownOpen(false)}
-                        className="group flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors hover:bg-gray-50"
-                      >
-                        <span className="text-xl">{categoryIcons[cat.slug] ?? "📦"}</span>
-                        <div>
-                          <p className="text-sm font-medium text-gray-800 group-hover:text-accent-500">
-                            {cat.name}
-                          </p>
-                          <p className="text-xs text-gray-400 line-clamp-1">{cat.description}</p>
-                        </div>
-                      </Link>
-                    ))}
+                <div className="grid grid-cols-[1fr_auto] divide-x divide-gray-100">
+                  {/* Categories column */}
+                  <div className="p-4">
+                    <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400">
+                      Browse by Category
+                    </p>
+                    <div className="grid grid-cols-2 gap-1">
+                      {categories.map((cat) => (
+                        <Link
+                          key={cat.slug}
+                          href={`/products?category=${cat.slug}`}
+                          onClick={() => setProductsDropdownOpen(false)}
+                          className="group flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors hover:bg-gray-50"
+                        >
+                          <span className="text-xl">{categoryIcons[cat.slug] ?? "📦"}</span>
+                          <div>
+                            <p className="text-sm font-medium text-gray-800 group-hover:text-accent-500">
+                              {cat.name}
+                            </p>
+                            <p className="text-xs text-gray-400 line-clamp-1">{cat.description}</p>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
-                  <div className="mt-3 border-t border-gray-100 pt-3">
-                    <Link
-                      href="/products"
-                      onClick={() => setProductsDropdownOpen(false)}
-                      className="flex items-center justify-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-700"
-                    >
-                      View All Products
-                      <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                      </svg>
-                    </Link>
+
+                  {/* Brands column */}
+                  <div className="w-44 p-4">
+                    <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400">
+                      Shop by Brand
+                    </p>
+                    <div className="space-y-1">
+                      {brands.map((b) => (
+                        <Link
+                          key={b}
+                          href={`/products?brand=${encodeURIComponent(b)}`}
+                          onClick={() => setProductsDropdownOpen(false)}
+                          className="group flex items-center gap-2 rounded-lg px-3 py-2 transition-colors hover:bg-gray-50"
+                        >
+                          {brandLogos[b] ? (
+                            <img src={brandLogos[b]} alt={b} className="h-5 w-12 object-contain" />
+                          ) : (
+                            <span className="text-sm font-semibold text-gray-700 group-hover:text-accent-500">{b}</span>
+                          )}
+                          {brandLogos[b] && (
+                            <span className="text-xs text-gray-500 group-hover:text-accent-500">{b}</span>
+                          )}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
+                </div>
+
+                <div className="border-t border-gray-100 p-3">
+                  <Link
+                    href="/products"
+                    onClick={() => setProductsDropdownOpen(false)}
+                    className="flex items-center justify-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-700"
+                  >
+                    View All Products
+                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </Link>
                 </div>
               </div>
             )}
@@ -253,6 +294,40 @@ export default function Header() {
                 >
                   <span>{categoryIcons[cat.slug] ?? "📦"}</span>
                   {cat.name}
+                </Link>
+              ))}
+            </div>
+          )}
+
+          {/* Mobile Brands accordion */}
+          <button
+            className="flex w-full items-center justify-between py-2 text-sm font-medium text-gray-600 hover:text-accent-500"
+            onClick={() => setMobileBrandsOpen(!mobileBrandsOpen)}
+          >
+            Brands
+            <svg
+              className={`h-4 w-4 transition-transform ${mobileBrandsOpen ? "rotate-180" : ""}`}
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="m19 9-7 7-7-7" />
+            </svg>
+          </button>
+          {mobileBrandsOpen && (
+            <div className="mb-2 ml-4 space-y-1 border-l-2 border-gray-100 pl-4">
+              {brands.map((b) => (
+                <Link
+                  key={b}
+                  href={`/products?brand=${encodeURIComponent(b)}`}
+                  className="flex items-center gap-2 py-1.5 text-sm text-gray-500 hover:text-accent-500"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {brandLogos[b] && (
+                    <img src={brandLogos[b]} alt={b} className="h-4 w-10 object-contain" />
+                  )}
+                  {b}
                 </Link>
               ))}
             </div>
