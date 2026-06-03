@@ -2015,17 +2015,17 @@ export const products: Product[] = [
   },
   {
     id: "gm-010",
-    name: "MCF8722GR — 2-Door Glass Door Merchandiser Cooler",
+    name: "MCF8722GR — 1-Door Glass Door Merchandiser Cooler",
     category: "glass-door-merchandisers",
     subcategory: "Merchandiser Cooler",
     brand: "Atosa",
     price: 1963.00,
     image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8722GR-1-768x768.jpg",
     description:
-      "Atosa MCF8722GR two-door glass door merchandiser cooler. Wide display capacity ideal for beverages, deli items, and packaged foods. LED interior lighting and digital temperature controller keep products at ideal serving temperature.",
+      "Atosa MCF8722GR one-door glass door merchandiser cooler. Ideal for beverages, deli items, and packaged foods. LED interior lighting and digital temperature controller keep products at ideal serving temperature.",
     specs: {
       "Model": "MCF8722GR",
-      "Doors": "2 Glass Doors",
+      "Doors": "1 Glass Door",
       "Hinge": "Right",
       "Temperature Range": "34°F – 46°F",
       "Refrigerant": "R290",
@@ -2037,17 +2037,17 @@ export const products: Product[] = [
   },
   {
     id: "gm-011",
-    name: "MCF8722GRL — 2-Door Glass Door Merchandiser Cooler (Left Hinge)",
+    name: "MCF8722GRL — 1-Door Glass Door Merchandiser Cooler (Left Hinge)",
     category: "glass-door-merchandisers",
     subcategory: "Merchandiser Cooler",
     brand: "Atosa",
     price: 1963.00,
     image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8722GR-1-768x768.jpg",
     description:
-      "Atosa MCF8722GRL two-door glass door merchandiser cooler with left-hinge doors. Identical capacity and performance to the MCF8722GR with reversed door swing for flexible placement.",
+      "Atosa MCF8722GRL one-door glass door merchandiser cooler with left-hinge door. Identical capacity and performance to the MCF8722GR with reversed door swing for flexible placement.",
     specs: {
       "Model": "MCF8722GRL",
-      "Doors": "2 Glass Doors",
+      "Doors": "1 Glass Door",
       "Hinge": "Left",
       "Temperature Range": "34°F – 46°F",
       "Refrigerant": "R290",
@@ -2059,17 +2059,17 @@ export const products: Product[] = [
   },
   {
     id: "gm-012",
-    name: "MCF8733GR — 3-Door Glass Door Merchandiser Cooler",
+    name: "MCF8733GR — 2-Door Glass Door Merchandiser Cooler",
     category: "glass-door-merchandisers",
     subcategory: "Merchandiser Cooler",
     brand: "Atosa",
     price: 2679.00,
     image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8733GR-1-768x768.jpg",
     description:
-      "Atosa MCF8733GR three-door glass door merchandiser cooler. High-capacity display unit for grocery, convenience stores, and high-volume foodservice. Full glass doors maximize product visibility and impulse sales.",
+      "Atosa MCF8733GR two-door glass door merchandiser cooler. High-capacity display unit for grocery, convenience stores, and high-volume foodservice. Full glass doors maximize product visibility and impulse sales.",
     specs: {
       "Model": "MCF8733GR",
-      "Doors": "3 Glass Doors",
+      "Doors": "2 Glass Doors",
       "Temperature Range": "34°F – 46°F",
       "Refrigerant": "R290",
       "Lighting": "LED Interior",
@@ -2230,16 +2230,16 @@ export const products: Product[] = [
   },
   {
     id: "gm-020",
-    name: "MCF8721GR — 2-Door Glass Door Merchandiser Freezer",
+    name: "MCF8721ES — 2-Door Glass Door Merchandiser Freezer",
     category: "glass-door-merchandisers",
     subcategory: "Merchandiser Freezer",
     brand: "Atosa",
     price: 3841.00,
     image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8721ES-768x768.png",
     description:
-      "Atosa MCF8721GR two-door glass door merchandiser freezer. High-capacity frozen food display for retail and foodservice. Digital electronic controller and LED interior lighting for optimal product presentation.",
+      "Atosa MCF8721ES two-door glass door merchandiser freezer. High-capacity frozen food display for retail and foodservice. Digital electronic controller and LED interior lighting for optimal product presentation.",
     specs: {
-      "Model": "MCF8721GR",
+      "Model": "MCF8721ES",
       "Doors": "2 Glass Doors",
       "Temperature Range": "-8°F – 0°F",
       "Refrigerant": "R290",
