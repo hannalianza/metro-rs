@@ -71,7 +71,7 @@ export const categories: Category[] = [
     slug: "glass-door-merchandisers",
     name: "Glass Door Merchandisers",
     description: "Atosa glass door merchandiser coolers and freezers for retail display and beverage storage",
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8705GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8705GR-768x768.jpg",
   },
 ];
 
@@ -1816,7 +1816,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Cooler (S/S)",
     brand: "Atosa",
     price: 2367.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8705GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8705GR-768x768.jpg",
     description:
       "Atosa MCF8705GR one-door glass door merchandiser cooler with stainless steel interior and exterior. Ideal for retail beverage display, grab-and-go items, and deli merchandising. Features LED interior lighting, digital temperature controller, and R290 refrigerant.",
     specs: {
@@ -1839,7 +1839,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Cooler (S/S)",
     brand: "Atosa",
     price: 2367.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8705GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2024/11/MCF8701GRL-1000-by-1000-768x768.jpg",
     description:
       "Atosa MCF8705GRL one-door glass door merchandiser cooler with stainless steel interior and exterior, left-hinge door. Ideal for tight spaces where a left-swing door is required. Features LED interior lighting, digital controller, and eco-friendly R290 refrigerant.",
     specs: {
@@ -1862,7 +1862,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Cooler (S/S)",
     brand: "Atosa",
     price: 3448.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8707GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8707GR-768x768.jpg",
     description:
       "Atosa MCF8707GR two-door glass door merchandiser cooler with stainless steel interior and exterior. Perfect for high-volume beverage and food retail display. Features LED interior lighting, digital electronic controller, and environmentally friendly R290 refrigerant.",
     specs: {
@@ -1884,7 +1884,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Cooler (S/S)",
     brand: "Atosa",
     price: 3384.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8709GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8709GR-2-768x768.jpg",
     description:
       "Atosa MCF8709GR three-door glass door merchandiser cooler with stainless steel interior and exterior. Designed for grocery, convenience stores, and large-format foodservice operations. Maximizes product visibility and sales with full glass door display.",
     specs: {
@@ -1908,7 +1908,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Freezer (S/S)",
     brand: "Atosa",
     price: 2855.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8701GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8701GR-1-768x768.jpg",
     description:
       "Atosa MCF8701GR one-door glass door merchandiser freezer with stainless steel interior and exterior. Ideal for frozen food, ice cream, and frozen beverage display in retail and foodservice environments. Features LED lighting and digital temperature control.",
     specs: {
@@ -1931,7 +1931,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Freezer (S/S)",
     brand: "Atosa",
     price: 2855.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8701GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2024/11/MCF8701GRL-1000-by-1000-768x768.jpg",
     description:
       "Atosa MCF8701GRL one-door glass door merchandiser freezer with stainless steel interior and exterior, left-hinge door. Same high performance as MCF8701GR with reversed door swing for flexible installation.",
     specs: {
@@ -1954,7 +1954,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Freezer (S/S)",
     brand: "Atosa",
     price: 4403.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8703ES-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8703GR-768x768.jpg",
     description:
       "Atosa MCF8703ES three-door glass door merchandiser freezer with stainless steel interior and exterior. ENERGY STAR certified for maximum energy efficiency. Designed for high-volume frozen food retail display in grocery and convenience store settings.",
     specs: {
@@ -1978,7 +1978,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Cooler",
     brand: "Atosa",
     price: 1544.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8726GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8726GR-1-300x300-1.png",
     description:
       "Atosa MCF8726GR glass door merchandiser cooler. Compact single-door design ideal for convenience stores, cafes, and small retail operations. Features LED interior lighting, digital temperature controller, and R290 refrigerant.",
     specs: {
@@ -1999,7 +1999,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Cooler",
     brand: "Atosa",
     price: 1599.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8725GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8725GR-768x768.png",
     description:
       "Atosa MCF8725GR glass door merchandiser cooler. Single-door reach-in display unit ideal for beverages, dairy, and grab-and-go items. Features LED interior lighting and digital electronic temperature controller.",
     specs: {
@@ -2020,7 +2020,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Cooler",
     brand: "Atosa",
     price: 1963.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8722GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8722GR-1-768x768.jpg",
     description:
       "Atosa MCF8722GR two-door glass door merchandiser cooler. Wide display capacity ideal for beverages, deli items, and packaged foods. LED interior lighting and digital temperature controller keep products at ideal serving temperature.",
     specs: {
@@ -2042,7 +2042,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Cooler",
     brand: "Atosa",
     price: 1963.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8722GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8722GR-1-768x768.jpg",
     description:
       "Atosa MCF8722GRL two-door glass door merchandiser cooler with left-hinge doors. Identical capacity and performance to the MCF8722GR with reversed door swing for flexible placement.",
     specs: {
@@ -2064,7 +2064,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Cooler",
     brand: "Atosa",
     price: 2679.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8733GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8733GR-1-768x768.jpg",
     description:
       "Atosa MCF8733GR three-door glass door merchandiser cooler. High-capacity display unit for grocery, convenience stores, and high-volume foodservice. Full glass doors maximize product visibility and impulse sales.",
     specs: {
@@ -2085,7 +2085,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Cooler",
     brand: "Atosa",
     price: 2685.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8727GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8727GR1000-by-1000-768x768.jpg",
     description:
       "Atosa MCF8727GR two-door glass door merchandiser cooler. Designed for high-volume beverage and food retail display. Features digital temperature controller, LED interior lighting, and environmentally friendly R290 refrigerant.",
     specs: {
@@ -2106,7 +2106,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Cooler",
     brand: "Atosa",
     price: 2873.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8723GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8723GR-4-768x768.jpg",
     description:
       "Atosa MCF8723GR two-door glass door merchandiser cooler. Premium display cooler for retail beverage and food merchandising. Features digital temperature controller, LED interior lighting, and R290 refrigerant.",
     specs: {
@@ -2127,7 +2127,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Cooler",
     brand: "Atosa",
     price: 4499.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8724GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8724GR-1-768x768.jpg",
     description:
       "Atosa MCF8724GR three-door glass door merchandiser cooler. Premium display cooler for retail environments requiring maximum product exposure. LED lighting, digital controls, and R290 refrigerant for efficient, eco-friendly operation.",
     specs: {
@@ -2148,7 +2148,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Cooler",
     brand: "Atosa",
     price: 5332.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8729GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2024/05/MGF8729GR-768x768.jpg",
     description:
       "Atosa MCF8729GR large-capacity glass door merchandiser cooler. Maximum capacity display refrigerator for high-volume retail, grocery, and foodservice operations. Full glass door visibility drives impulse purchases.",
     specs: {
@@ -2170,7 +2170,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Freezer",
     brand: "Atosa",
     price: 2545.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8720GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8720GR-768x768.png",
     description:
       "Atosa MCF8720GR one-door glass door merchandiser freezer. Ideal for frozen food, ice cream, and frozen beverage display in convenience stores, grocery, and foodservice operations. Features LED lighting and digital temperature controller.",
     specs: {
@@ -2192,7 +2192,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Freezer",
     brand: "Atosa",
     price: 2545.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8720GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8720GR-768x768.png",
     description:
       "Atosa MCF8720GRL one-door glass door merchandiser freezer with left-hinge door. Same performance as the MCF8720GR with reversed door swing for flexible installation in tight spaces.",
     specs: {
@@ -2214,7 +2214,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Freezer",
     brand: "Atosa",
     price: 3741.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8732GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8721ES-600x600-1.png",
     description:
       "Atosa MCF8732GR two-door glass door merchandiser freezer. Wide display capacity for frozen foods, ice cream, and frozen beverages. Features LED interior lighting and digital temperature controller.",
     specs: {
@@ -2235,7 +2235,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Freezer",
     brand: "Atosa",
     price: 3841.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8721GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8721ES-768x768.png",
     description:
       "Atosa MCF8721GR two-door glass door merchandiser freezer. High-capacity frozen food display for retail and foodservice. Digital electronic controller and LED interior lighting for optimal product presentation.",
     specs: {
@@ -2256,7 +2256,7 @@ export const products: Product[] = [
     subcategory: "Merchandiser Freezer",
     brand: "Atosa",
     price: 5841.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8728GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8728GR-768x768.png",
     description:
       "Atosa MCF8728GR large-capacity glass door merchandiser freezer. Maximum display freezer for high-volume grocery, convenience, and foodservice operations. Full glass door visibility drives impulse purchases of frozen products.",
     specs: {
