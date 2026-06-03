@@ -3,7 +3,7 @@
 import { Suspense, useState, useMemo, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { products, categories, getBrands } from "@/data/products";
+import { products, categories, getBrands, subcategoryOrder } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 
 const ITEMS_PER_PAGE = 12;
@@ -21,12 +21,13 @@ function ProductsContent() {
 
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState(searchParams.get("category") || "");
-  const [brand, setBrand] = useState("");
+  const [brand, setBrand] = useState(searchParams.get("brand") || "");
   const [sort, setSort] = useState("name-asc");
   const [page, setPage] = useState(1);
 
   useEffect(() => {
     setCategory(searchParams.get("category") || "");
+    setBrand(searchParams.get("brand") || "");
     setPage(1);
   }, [searchParams]);
 
@@ -180,7 +181,7 @@ function ProductsContent() {
 
             {/* Product Grid */}
             <div className="flex-1">
-              {paginated.length === 0 ? (
+              {filtered.length === 0 ? (
                 <div className="rounded-lg border bg-gray-50 py-16 text-center">
                   <svg className="mx-auto h-12 w-12 text-gray-300" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -192,6 +193,23 @@ function ProductsContent() {
                   >
                     Clear Filters
                   </button>
+                </div>
+              ) : category && subcategoryOrder[category] && !search && !brand ? (
+                // Grouped by subcategory when a category is selected
+                <div className="space-y-10">
+                  {subcategoryOrder[category]
+                    .map((sub) => ({ sub, items: filtered.filter((p) => p.subcategory === sub) }))
+                    .filter(({ items }) => items.length > 0)
+                    .map(({ sub, items }) => (
+                      <div key={sub}>
+                        <h2 className="mb-4 border-b pb-2 text-lg font-semibold text-gray-800">{sub}</h2>
+                        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+                          {items.map((product) => (
+                            <ProductCard key={product.id} product={product} />
+                          ))}
+                        </div>
+                      </div>
+                    ))}
                 </div>
               ) : (
                 <>

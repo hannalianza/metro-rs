@@ -18,6 +18,24 @@ export interface Category {
   image: string;
 }
 
+// Defines the display order of subcategories per category slug
+export const subcategoryOrder: Record<string, string[]> = {
+  "refrigeration": ["Reach-In Refrigerators", "Reach-In Freezers", "Undercounters", "Chef Bases"],
+  "cooking-equipment": ["Gas Ranges", "Fryers", "Broilers", "Griddles"],
+  "prep-tables": ["Standard Top", "Mega Top", "Pizza Prep"],
+  "ice-makers": ["Undercounter Ice Makers", "Modular Ice Makers", "Ice Dispensers", "Ice Bins"],
+  "food-prep": ["Planetary Mixers", "Meat Slicers", "Meat Grinders"],
+  "sinks": ["Compartment Sinks", "Hand Sinks", "Mop Sinks"],
+  "work-tables": ["Work Tables", "Equipment Stands", "Wire Shelving"],
+  "walk-in-coolers-freezers": ["Walk-In Coolers", "Walk-In Freezers"],
+  "glass-door-merchandisers": [
+    "Merchandiser Cooler (S/S)",
+    "Merchandiser Cooler",
+    "Merchandiser Freezer (S/S)",
+    "Merchandiser Freezer",
+  ],
+};
+
 export const categories: Category[] = [
   {
     slug: "refrigeration",
