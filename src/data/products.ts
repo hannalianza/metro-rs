@@ -2080,14 +2080,35 @@ export const products: Product[] = [
   },
   {
     id: "gm-013",
-    name: "MCF8723GR — 2-Door Glass Door Merchandiser Cooler",
+    name: "MCF8727GR — 2-Door Glass Door Merchandiser Cooler",
     category: "glass-door-merchandisers",
     subcategory: "Merchandiser Cooler",
     brand: "Atosa",
     price: 2685.00,
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8727GR-1.jpg",
+    description:
+      "Atosa MCF8727GR two-door glass door merchandiser cooler. Designed for high-volume beverage and food retail display. Features digital temperature controller, LED interior lighting, and environmentally friendly R290 refrigerant.",
+    specs: {
+      "Model": "MCF8727GR",
+      "Doors": "2 Glass Doors",
+      "Temperature Range": "34°F – 46°F",
+      "Refrigerant": "R290",
+      "Lighting": "LED Interior",
+      "Voltage": "115V / 60Hz / 1Ph",
+      "Certification": "ETL, NSF",
+    },
+    featured: false,
+  },
+  {
+    id: "gm-013b",
+    name: "MCF8723GR — 2-Door Glass Door Merchandiser Cooler",
+    category: "glass-door-merchandisers",
+    subcategory: "Merchandiser Cooler",
+    brand: "Atosa",
+    price: 2873.00,
     image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8723GR-1.jpg",
     description:
-      "Atosa MCF8723GR two-door glass door merchandiser cooler. Designed for high-volume beverage and food retail display. Features digital temperature controller, LED interior lighting, and environmentally friendly R290 refrigerant.",
+      "Atosa MCF8723GR two-door glass door merchandiser cooler. Premium display cooler for retail beverage and food merchandising. Features digital temperature controller, LED interior lighting, and R290 refrigerant.",
     specs: {
       "Model": "MCF8723GR",
       "Doors": "2 Glass Doors",
