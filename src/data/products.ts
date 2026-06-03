@@ -1879,17 +1879,17 @@ export const products: Product[] = [
   },
   {
     id: "gm-004",
-    name: "MCF8709GR — 3-Door Glass Door Merchandiser Cooler (S/S)",
+    name: "MCF8709GR — 2-Door Glass Door Merchandiser Cooler (S/S)",
     category: "glass-door-merchandisers",
     subcategory: "Merchandiser Cooler (S/S)",
     brand: "Atosa",
     price: 3384.00,
     image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8709GR-2-768x768.jpg",
     description:
-      "Atosa MCF8709GR three-door glass door merchandiser cooler with stainless steel interior and exterior. Designed for grocery, convenience stores, and large-format foodservice operations. Maximizes product visibility and sales with full glass door display.",
+      "Atosa MCF8709GR two-door glass door merchandiser cooler with stainless steel interior and exterior. Designed for grocery, convenience stores, and large-format foodservice operations. Maximizes product visibility and sales with full glass door display.",
     specs: {
       "Model": "MCF8709GR",
-      "Doors": "3 Glass Doors",
+      "Doors": "2 Glass Doors",
       "Finish": "Stainless Steel Interior & Exterior",
       "Temperature Range": "34°F – 46°F",
       "Refrigerant": "R290",
@@ -1949,17 +1949,17 @@ export const products: Product[] = [
   },
   {
     id: "gm-007",
-    name: "MCF8703ES — 3-Door Glass Door Merchandiser Freezer (S/S)",
+    name: "MCF8703ES — 2-Door Glass Door Merchandiser Freezer (S/S)",
     category: "glass-door-merchandisers",
     subcategory: "Merchandiser Freezer (S/S)",
     brand: "Atosa",
     price: 4403.00,
     image: "https://atosausa.com/wp-content/uploads/2023/10/MCF8703GR-768x768.jpg",
     description:
-      "Atosa MCF8703ES three-door glass door merchandiser freezer with stainless steel interior and exterior. ENERGY STAR certified for maximum energy efficiency. Designed for high-volume frozen food retail display in grocery and convenience store settings.",
+      "Atosa MCF8703ES two-door glass door merchandiser freezer with stainless steel interior and exterior. ENERGY STAR certified for maximum energy efficiency. Designed for high-volume frozen food retail display in grocery and convenience store settings.",
     specs: {
       "Model": "MCF8703ES",
-      "Doors": "3 Glass Doors",
+      "Doors": "2 Glass Doors",
       "Finish": "Stainless Steel Interior & Exterior",
       "Temperature Range": "-8°F – 0°F",
       "Refrigerant": "R290",
