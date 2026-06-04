@@ -294,12 +294,12 @@ export default function HomePage() {
           </div>
           <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
             {[
-              { slug: "turbo-air", name: "Turbo Air", logo: "/brands/turbo-air.jpg", tag: "Refrigeration" },
-              { slug: "atosa", name: "Atosa", logo: "/brands/atosa.png", tag: "Refrig. & Cooking" },
-              { slug: "winco", name: "Winco", logo: "/brands/winco.png", tag: "Smallwares" },
-              { slug: "5star", name: "5Star", logo: "/brands/5star.png", tag: "Bar Equipment" },
+              { name: "Turbo Air", logo: "/brands/turbo-air.jpg", tag: "Refrigeration" },
+              { name: "Atosa", logo: "/brands/atosa.png", tag: "Refrig. & Cooking" },
+              { name: "WinCo", logo: "/brands/winco.png", tag: "Food Prep & Tables" },
+              { name: "5 Star", logo: "/brands/5star.png", tag: "Cooking Equipment" },
             ].map((brand) => (
-              <Link key={brand.slug} href={`/products?brand=${brand.slug}`} className="brand-tile" aria-label={`${brand.name} commercial equipment`}>
+              <Link key={brand.name} href={`/products?brand=${encodeURIComponent(brand.name)}`} className="brand-tile" aria-label={`${brand.name} commercial equipment`}>
                 <img src={brand.logo} alt={`${brand.name} logo`} loading="lazy" />
                 <span className="brand-tag">{brand.tag}</span>
               </Link>
