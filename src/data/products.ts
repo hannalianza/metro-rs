@@ -3619,6 +3619,27 @@ export const products: Product[] = [
   },
 
   {
+    id: "gdm-ct-005",
+    name: "DSRC-28 — Countertop Refrigerated Display Case",
+    category: "glass-door-merchandisers",
+    subcategory: "Countertop Glass Door Merchandisers",
+    brand: "Atosa",
+    price: 793.00,
+    image: "https://atosausa.com/wp-content/uploads/2024/03/DSRC-28-600x600.jpg",
+    description:
+      "Atosa DSRC-28 countertop refrigerated display case with glass front for product visibility. Features LED interior lighting, digital temperature controller, and compact countertop design. Ideal for showcasing sandwiches, pastries, beverages, and grab-and-go items at the point of sale.",
+    specs: {
+      "Model": "DSRC-28",
+      "Style": "Countertop Refrigerated Display",
+      "Temperature Range": "34°F – 41°F",
+      "Lighting": "LED",
+      "Voltage": "115V / 60Hz / 1Ph",
+      "Certification": "ETL, NSF",
+    },
+    featured: false,
+  },
+
+  {
     id: "wc-sk-001",
     name: "WCHS-18 — 18\" Stainless Steel Hand Sink",
     category: "sinks",
