@@ -584,7 +584,7 @@ export const products: Product[] = [
     subcategory: "Mega Top Refrigerators",
     brand: "Atosa",
     price: 1878.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/10/MSF8305GR-1.jpg",
+    image: "https://atosausa.com/wp-content/uploads/2023/10/MSF8305GR_side-600x600.jpg",
     description:
       "Atosa MSF8305GR 27-inch refrigerated mega top sandwich prep table with stainless steel construction, rear mount R290 compressor, and electronic temperature controller. Features an oversized mega top pan rail with 1/6-size pans for expanded ingredient capacity, 9-1/4\" cutting board, and pre-installed casters.",
     specs: {
