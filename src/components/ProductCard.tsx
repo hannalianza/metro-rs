@@ -9,11 +9,11 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <div className="group flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white transition-shadow hover:shadow-lg">
       <Link href={`/products/${product.id}`} className="block">
-        <div className="flex h-48 items-center justify-center bg-gray-100 transition-colors group-hover:bg-gray-50 overflow-hidden">
+        <div className="aspect-square flex items-center justify-center bg-gray-100 transition-colors group-hover:bg-gray-50 overflow-hidden">
           <img
             src={product.image}
             alt={product.name}
-            className="h-full w-full object-contain p-2"
+            className="h-full w-full object-contain p-4"
             loading="lazy"
           />
         </div>

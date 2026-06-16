@@ -58,11 +58,11 @@ export default function ProductDetailClient({ id }: { id: string }) {
         <div className="mx-auto max-w-7xl px-4">
           <div className="grid gap-10 lg:grid-cols-2">
             {/* Product image */}
-            <div className="flex items-center justify-center rounded-lg border bg-gray-100 p-6 overflow-hidden">
+            <div className="aspect-square flex items-center justify-center rounded-lg border bg-gray-100 p-6 overflow-hidden">
               <img
                 src={product.image}
                 alt={displayName(product.name)}
-                className="max-h-96 w-full object-contain"
+                className="h-full w-full object-contain"
               />
             </div>
 
