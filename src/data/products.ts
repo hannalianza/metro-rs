@@ -2038,7 +2038,7 @@ export const products: Product[] = [
     subcategory: "Reach-In Refrigerators",
     brand: "Refrigeration-X",
     price: 4891.00,
-    image: "https://refrigerationx.com/upload//style/XR72-3-N-Photoroom.jpg",
+    image: "https://refrigerationx.com/upload//style/XR72-3-N6-Photoroom.jpg",
     description:
       'Refrigeration-X XR72-3-N6 three-door reach-in refrigerator with 65.8 cu ft capacity. Features a top-mount self-contained refrigeration system, three stainless steel solid doors with locks, digital temperature control and monitoring, LED interior lighting, and nine adjustable PE-coated wire shelves. Uses eco-friendly R-600a hydrocarbon refrigerant. Ideal for high-volume commercial kitchens requiring maximum cold storage.',
     specs: {
