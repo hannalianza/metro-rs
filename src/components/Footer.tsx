@@ -42,8 +42,8 @@ export default function Footer() {
               <li><Link href="/products?category=prep-tables" className="hover:text-accent-500">Prep Tables</Link></li>
               <li><Link href="/products?category=ice-makers" className="hover:text-accent-500">Commercial Ice Makers</Link></li>
               <li><Link href="/products?category=food-prep" className="hover:text-accent-500">Food Prep Equipment</Link></li>
-              <li><Link href="/products?category=sinks" className="hover:text-accent-500">Sinks</Link></li>
-              <li><Link href="/products?category=work-tables" className="hover:text-accent-500">Work Tables & Shelving</Link></li>
+              <li><Link href="/products?category=sinks" className="hover:text-accent-500">Stainless Steel Sink</Link></li>
+              <li><Link href="/products?category=work-tables" className="hover:text-accent-500">S/S Tables and Shelving</Link></li>
             </ul>
           </div>
 
