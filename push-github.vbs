@@ -1,0 +1,2 @@
+Set shell = CreateObject("WScript.Shell")
+shell.Run "cmd /k cd /d C:\Projects\metro-rs && git config --global user.email ""just4metrors@gmail.com"" && git config --global user.name ""Metro Restaurant Supply"" && git add . && git commit -m ""Initial commit: Metro Restaurant Supply website"" && git branch -M main && git remote add origin https://github.com/hannalianza/metro-rs.git && git push -u origin main", 1, False

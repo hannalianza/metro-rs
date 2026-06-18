@@ -1,0 +1,835 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="RefrigerationX, Refrigerator, Fridge">
+    <meta name="description" content="RefrigerationX">
+    <title></title>
+    <meta property="og:title" content="">
+    <meta property="og:description" content="RefrigerationX">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://refrigerationx.com/">
+    <meta property="og:image" content="">
+    <meta name="author" content="iTab">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--<link rel="shortcut icon" href="images/favicon.ico">-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.imagezoom.min.js"></script>
+    <!-- <script type="text/javascript" src="/js/modernizr.custom.17475.js"></script> -->
+    <script type="text/javascript" src="/js/jquery.validate.js?ver=10032014"></script>
+    <script type="text/javascript" src="/js/jquery.creditCardValidator.js?ver=10032014"></script>
+    <script type="text/javascript" src="/js/creditcard_demo.js"></script>
+    <script type="text/javascript" src="/js/jquery-validation-bootstrap-tooltip.js"></script>
+    <link rel="stylesheet" href="/css/imagezoom/imagezoom.css" />
+    <!-- <link rel="stylesheet" href="/css/elastislide/es-cus.css" /> -->
+    <link rel="stylesheet" href="/css/creditCardValidator.css" />
+
+    <script type="text/javascript" src="/js/jquery.imagezoom.min.js"></script>
+    <script src="https://kit.fontawesome.com/bedb749e38.js" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="/js/modernizr.custom.17475.js"></script> -->
+    <!-- <script type="text/javascript" src="/js/jquery.elastislide.js"></script> -->
+    <!-- Select Box -->
+    <script src="/plugins/selectbox/dist/jquery.selectric.js"></script>
+    <link href="/plugins/selectbox/dist/selectric.css" rel="stylesheet">
+    <!-- Bx Slider -->
+    <link href="/plugins/bxslider/jquery.bxslider.css?ver=2" rel="stylesheet">
+    <script src="/plugins/bxslider/plugins/jquery.easing.1.3.js?ver=1"></script>
+    <script src="/plugins/bxslider/plugins/jquery.fitvids.js?ver=1"></script>
+    <script src="/plugins/bxslider/jquery.bxslider.js?ver=2"></script>
+    <!-- Rating Plugin -->
+    <link href="/plugins/rating/jquery.rateyo.css" rel="stylesheet">
+    <script src="/plugins/rating/jquery.rateyo.js"></script>
+    <!-- Do not edit this -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/style.css?ver=20260618094655" rel="stylesheet">
+    <!-- <link href="/css/warranty.css?ver=20260618094655" rel="stylesheet"> -->
+    <script src="/plugins/equal-height/equal-height.js"></script>
+    <script src="/js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+
+    <!-- Infinite Scroll-->
+    <script type="text/javascript" src="/js/jquery.jscroll.js"></script>
+    <script type="text/javascript" src="/js/jquery-scrolltofixed-min.js"></script>
+    <!-- fontawesome icon -->
+    <script type="text/javascript" src="/js/fontawesome-free-5.8.1-web_all.min.js"></script>
+
+    <!-- header -->
+    <!-- <link href="/css/jquery.smartmenus.bootstrap.css" rel="stylesheet"> -->
+    <!-- Sharing by ShareThis.com -->
+    <!-- <script type="text/javascript">var switchTo5x=true;</script>
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript">stLight.options({publisher: "82611cec-4387-4d3a-b9f1-1149d4ae9289", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script> -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <!-- Google reCAPTCHA-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+
+    <script type="text/javascript">
+    if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+    }
+    $(document).ready(function() {
+        $(".dropdown").hover(
+            function() {
+                $(this).addClass("open");
+            },
+            function() {
+                $(this).removeClass("open");
+            }
+        );
+        var wh = parseInt($(window).width());
+        var orient = '';
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || wh <
+            768) {
+            $(".dropdown").click(function(e) {
+                e.stopPropagation();
+            });
+
+            $(".subDropdown").click(function(e) {
+                e.stopPropagation();
+            });
+        }
+
+        autoHeight.on()
+        $(window).resize(function() {
+            autoHeight.on();
+        });
+
+    });
+    var autoHeight = {
+        on: function() {
+            var size = window.outerWidth;
+            if (size > 767) {
+                this.set();
+            } else {
+                this.reset();
+            }
+        },
+        set: function() {
+            var height = document.getElementById("head").offsetHeight;
+            // document.getElementById("root").style.marginTop = 10 + 'px';
+        },
+        reset: function() {
+            document.getElementById("root").style.marginTop = '0px';
+        }
+    }
+    </script>
+</head>
+
+<body class="w-main">
+    <div class="wrapper"
+        style="width:100%; position:sticky; top:0; z-index:100; box-shadow: 0 4px 7px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);">
+        <!-- Header -->
+
+        <!-- Header -->
+        <header id="head" style="min-height: 100px; height: auto;">
+            <!-- Top Menu -->
+            <div class="notification-bar">
+                <div class="message">Sign up now to complete your purchase—approval
+                    required. Need help?
+                    <a href="https://refrigerationx.com/contact-us">Contact us!</a>
+                                    </div>
+            </div>
+            <div class="header-top-wrapper">
+                <div class="header-wrapper">
+                    <div class="promotion hidden">
+                        <div class="col-xs-12 text-center">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="row" style="background-color: #eee;">
+                        <nav class="navigation " role="navigation">
+                            <!--<div class="col-md-5 no-pd">-->
+
+                            <div class="navlogo col-md-2 text-center">
+                                <a href="/"><img src="/images/Refrigeration X_logo_motto.png"
+                                        onerror="this.onerror=null; this.src='image.png'" class="logo"></a>
+                            </div>
+                            <div class="mymenu col-md-12 no-pd">
+                                <!-- <form id="frmSearch" name="frmSearch" action="/search" method="get" style="" class=""> -->
+                                                                <!-- <div id="frmSearch">
+                                    <input type="search" class="w_search" id="w_search_top" placeholder="Search"
+                                        name="filter_name" size="20" required>
+                                    <button type="button" class="btn_search" id="btnTopSearch" style="border: 1px;">
+                                        <img src="/images/header-search.png" id="imgTopSearch" class="header-icon"
+                                            ;></button>
+                                </div> -->
+                                <div id="frmSearch" style="position:relative;">
+    <input type="search" class="w_search" id="w_search_top" placeholder="Search" name="filter_name" required
+        autocomplete="off" size="20">
+    <button type="button" class="btn_search" id="btnTopSearch">
+        <img src="/images/header-search.png" class="header-icon">
+    </button>
+    <div id="searchSuggestions" class="suggestion-box"></div>
+</div>
+
+<!-- 인라인 CSS -->
+<style>
+.suggestion-box {
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-bottom: 1px solid #eee;
+    text-align: start;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background: #f8f9fa;
+}
+
+.highlight {
+    color: #ff6b00;
+    font-weight: 700;
+    background-color: #fff3e8;
+}
+
+
+.highlighted {
+    background: #e9ecef !important;
+}
+</style>
+
+<!-- 인라인 JavaScript -->
+<script>
+$(document).ready(function() {
+    const $searchInput = $('#w_search_top');
+    const $searchButton = $('#btnTopSearch');
+    const $suggestionBox = $('#searchSuggestions');
+    let activeIndex = -1;
+    let searchTimer = null;
+
+    $searchButton.on('click', function() {
+        executeSearch();
+    });
+
+    // 검색어 처리
+    $searchInput.on('input', function() {
+        clearTimeout(searchTimer);
+        const keyword = $(this).val().trim();
+
+        if (keyword.length < 2) {
+            $suggestionBox.hide().empty();
+            return;
+        }
+        var formData = new FormData();
+        formData.append('keyword', keyword);
+
+        searchTimer = setTimeout(() => {
+            $.ajax({
+                url: '/api/xt.search.php',
+                method: 'POST',
+                contentType: 'application/json',
+                data: formData,
+                processData: false,
+                contentType: false,
+                dataType: 'json',
+                success: function(response) {
+                    updateSuggestions(keyword, response);
+                },
+                error: function(xhr) {
+                    console.error('검색 오류:', xhr.statusText);
+                }
+            });
+        }, 100);
+    });
+
+    // 추천 검색어 업데이트
+    function updateSuggestions(keyword, searchResults) {
+        $suggestionBox.empty();
+
+        if (searchResults.length === 0) {
+            $suggestionBox.hide();
+            return;
+        }
+
+        searchResults.forEach((result, index) => {
+            const highlighted = highlightMatch(result, keyword);
+
+            $('<div>')
+                .addClass('suggestion-item')
+                .html(highlighted)
+                .data('raw', result) // 원본
+                .on('click', function() {
+                    showResult($(this).data('raw'));
+                })
+                .appendTo($suggestionBox);
+        });
+
+        $suggestionBox.show();
+    }
+
+    // 검색어와 일치하는 캐릭터만 강조
+    function highlightMatch(text, keyword) {
+        if (!keyword) return text;
+        const regex = new RegExp(`(${escapeRegExp(keyword)})`, 'gi');
+        return text.replace(regex, '<span class="highlight">$1</span>');
+    }
+
+    function escapeRegExp(string) {
+        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+
+    $searchInput.on('keydown', function(e) {
+        const $items = $('.suggestion-item');
+
+        switch (e.key) {
+            case 'ArrowDown':
+                activeIndex = Math.min(activeIndex + 1, $items.length - 1);
+                break;
+            case 'ArrowUp':
+                activeIndex = Math.max(activeIndex - 1, -1);
+                break;
+            case 'Enter':
+                e.preventDefault();
+                if (activeIndex > -1) {
+                    $searchInput.val($items.eq(activeIndex).text());
+                }
+                executeSearch();
+                return;
+            default:
+                return;
+        }
+
+        $items.removeClass('highlighted');
+        if (activeIndex > -1) {
+            $items.eq(activeIndex).addClass('highlighted');
+        }
+    });
+
+    function showResult(id) {
+        const value = encodeURI(id);
+        // 선택된 option 이 있으면
+        if (value && value > '') {
+            document.location.href = '/shop/item/' + value;
+        } else {
+            alert('Please input Search Keywords.');
+        }
+    }
+
+    function executeSearch() {
+        var value = $('#w_search_top').val()
+        value = encodeURI(value);
+        // 선택된 option 이 있으면
+        if (value && value > '') {
+            document.location.href = '/search/' + value;
+        } else {
+            alert('Please input Search Keywords.');
+        }
+
+    }
+
+    // 외부 클릭 이벤트
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('#frmSearch').length) {
+            $suggestionBox.hide();
+        }
+    });
+});
+</script>                                <!-- </form> -->
+                                <ul style="display: flex; align-items: center;">
+                                    <li>
+                                                                                <a href="https://refrigerationx.com/account/login" class="member signin"><span
+                                                id="menu-text">Sign In / Register</span><img
+                                                src="/images/my-account.png" class="header-icon"></a>
+                                                                            </li>
+                                    <li id="divCart-Dropdown" class="dropdown bag_desktop">
+                                        <a data-toggle="dropdown" href="/shop/cart" onclick="location.href='/shop/cart'"
+                                            class="list-white">
+                                            <span class="icon-bag">
+                                                <img class="cartBlack header-icon" src="/images/bag-icon.png"><span
+                                                    id="menu-text">&nbsp;Cart</span>
+                                                <!--<span class="hidden-xs hidden-sm hidden-md ">Bag</span>-->
+                                            </span>
+                                                                                        <span class="value" id="spCartCnt">0</span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right" id="cart-hover-container"
+                                            role="menu">
+                                            <li class="cart-li-subtotal">
+                                                <p>Loading...</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="row">
+                        <nav class="navigation gnb gnb-basic" role="navigation" style="
+                    background: white;">
+                            <div class="col-md-12 no-pd topNav">
+                                <div class="navbar-collapse yamm collapse" id="bs-sidebar-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                                                                <li class="header-left-li">
+                                            <a class="dsinleft2"
+                                                href="/shop/category/Orders">Orders</a>
+                                                                                    </li>
+                                                                                <li class="dropdown dsinleft header-left-li">
+                                            <a href="/shop/category/Products" id="dropdownMenu2"
+                                                aria-expanded="false" aria-haspopup="true"
+                                                role="button">Products</a>
+
+
+                                            <!--<span class="hidden-md hidden-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8744;</span>-->
+                                            <ul class=" dropdown dropdown-menu nav_death2"
+                                                aria-labelledby="dropdownMenu2" role="menu">
+                                                                                                <li class="header-left-li"><a class="dsinleft2"
+                                                        href="/shop/category/Reach-In">Reach-In</a>
+                                                </li>
+                                                                                                                                                <li class="header-left-li"><a class="dsinleft2"
+                                                        href="/shop/category/Food-Prep-Tables">Food Prep Tables</a>
+                                                </li>
+                                                                                                                                                <li class="header-left-li"><a class="dsinleft2"
+                                                        href="/shop/category/Undercounters">Undercounters</a>
+                                                </li>
+                                                                                                                                                <li class="header-left-li"><a class="dsinleft2"
+                                                        href="/shop/category/Bar-Refrigeration">Bar Refrigeration</a>
+                                                </li>
+                                                                                                                                                <li class="header-left-li"><a class="dsinleft2"
+                                                        href="/shop/category/Glass-Door-Merchandiser">Glass Door Merchandiser</a>
+                                                </li>
+                                                                                                
+                                            </ul>
+                                        </li>
+                                                                                </li>
+                                                                                <li class="dropdown dsinleft header-left-li">
+                                            <a href="/shop/category/Parts-and-Accessories" id="dropdownMenu3"
+                                                aria-expanded="false" aria-haspopup="true"
+                                                role="button">Parts & Accessories</a>
+
+
+                                            <!--<span class="hidden-md hidden-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8744;</span>-->
+                                            <ul class=" dropdown dropdown-menu nav_death2"
+                                                aria-labelledby="dropdownMenu3" role="menu">
+                                                                                                <li class="dropdown-submenu subDropdown header-left-li">
+                                                    <a href="/shop/category/Parts"
+                                                        id="dropdownSubMenu3" class="dropdown-toggle"
+                                                        data-toggle="subDropdown" aria-expanded="false"
+                                                        aria-haspopup="true" role="button">Parts</a>
+                                                    <!--<span
+                                                                        class="hidden-md hidden-lg"
+                                                                        style="margin-left:15px;">&#8744;</span>-->
+                                                    <ul class="dropdown-menu sub"
+                                                        aria-labelledby="dropdownSubMenu3" role="menu">
+                                                        <!-- <ul class="open-dropdown-menu sub"> -->
+                                                                                                                <li><a class="dsinleft2" href="/shop/category/Shelf"
+                                                                class="sub">Shelf</a></li>
+                                                                                                                <li><a class="dsinleft2" href="/shop/category/CastersFLegs"
+                                                                class="sub">Casters/Legs</a></li>
+                                                                                                                <li><a class="dsinleft2" href="/shop/category/Gasket"
+                                                                class="sub">Gasket</a></li>
+                                                                                                            </ul>
+                                                </li>
+                                                                                                                                                <li class="dropdown-submenu subDropdown header-left-li">
+                                                    <a href="/shop/category/Accessories"
+                                                        id="dropdownSubMenu3" class="dropdown-toggle"
+                                                        data-toggle="subDropdown" aria-expanded="false"
+                                                        aria-haspopup="true" role="button">Accessories</a>
+                                                    <!--<span
+                                                                        class="hidden-md hidden-lg"
+                                                                        style="margin-left:15px;">&#8744;</span>-->
+                                                    <ul class="dropdown-menu sub"
+                                                        aria-labelledby="dropdownSubMenu3" role="menu">
+                                                        <!-- <ul class="open-dropdown-menu sub"> -->
+                                                                                                                <li><a class="dsinleft2" href="/shop/category/Pan-rack"
+                                                                class="sub">Pan rack</a></li>
+                                                                                                                <li><a class="dsinleft2" href="/shop/category/Removable-Cover"
+                                                                class="sub">Removable Cover</a></li>
+                                                                                                                <li><a class="dsinleft2" href="/shop/category/Clear-Lid"
+                                                                class="sub">Clear Lid</a></li>
+                                                                                                                <li><a class="dsinleft2" href="/shop/category/Back-Splash"
+                                                                class="sub">Back Splash</a></li>
+                                                                                                                <li><a class="dsinleft2" href="/shop/category/Overshelf"
+                                                                class="sub">Overshelf</a></li>
+                                                                                                            </ul>
+                                                </li>
+                                                                                                
+                                            </ul>
+                                        </li>
+                                                                                </li>
+                                                                                <li class="header-left-li"><a class="dsinleft2" href="/faq">FAQ</a></li>
+                                        <li class="dropdown dsinleft header-left-li">
+                                            <a href="/our-story" id="dropdownMenuOurStory" aria-expanded="false"
+                                                aria-haspopup="true" role="button">About US</a>
+                                            <ul class=" dropdown dropdown-menu nav_death2"
+                                                aria-labelledby="dropdownMenuOurStory" role="menu">
+                                                <li class="header-left-li"><a class="dsinleft2" href="/our-story">Our
+                                                        Story</a></li>
+                                                <li class="header-left-li"><a class="dsinleft2"
+                                                        href="/contact-us">Contact Us</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown dsinleft header-left-li">
+                                            <a href="/purchase-Inquiry" id="dropdownMenuCS" aria-expanded="false"
+                                                aria-haspopup="true" role="button">Customer Service</a>
+                                            <ul class=" dropdown dropdown-menu nav_death2"
+                                                aria-labelledby="dropdownMenuCS" role="menu">
+                                                <li class="header-left-li"><a class="dsinleft2"
+                                                        href="/purchase-Inquiry">Purchase Inquiry</a></li>
+                                                <li class="header-left-li"><a class="dsinleft2"
+                                                        href="/warranty/status">Warranty Status Check</a></li>
+                                                <li class="header-left-li"><a class="dsinleft2"
+                                                        href="/warranty/claim">Warranty Claim</a></li>
+                                                <li class="header-left-li"><a class="dsinleft2"
+                                                        href="/warranty/statement">Warranty Statement</a></li>
+                                                <li class="header-left-li"><a class="dsinleft2"
+                                                        href="/warranty/registration">Warranty Registration</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+
+                <!-- <a href="/" class="mobile_logo" ><img src="https://refrigerationx.com/upload//store/Refrigeration X_logo.png" class="logoWhiteTrans" ></a> -->
+
+
+                <!--<a href="/" class="mobile_logo" ><img src="https://refrigerationx.com/upload//store/Refrigeration X_logo.png" class="logoWhiteTrans" ></a>-->
+                <button id="navBtn" type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-sidebar-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+            </div>
+    </div>
+    <!-- Alert End -->
+    <script>
+    $(document).ready(function() {
+        var currentZipcode = $('#czipcode').text().trim();
+        if (currentZipcode) {
+            $.ajax({
+                type: 'GET',
+                url: '/api/xt.get.city.zipcode.php',
+                data: {
+                    'zipcode': currentZipcode
+                },
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                cache: false,
+                success: function(response) {
+                    var returnVal = response.returnVal;
+                    console.log(returnVal)
+                    //var errorMsg = response.ErrorMessage;
+                    if (returnVal == 200) {
+                        $('#city').text(response.data.city);
+                        $('#state').text(response.data.state);
+                        return false;
+                    } else {
+                        alert(response.message);
+                        // window.location.reload();
+                    }
+                },
+                error: function(jqXHR, error, errorThrown) {
+                    console.error(error)
+                    alert(formatErrorMessage(jqXHR, error));
+                    return false;
+                }
+            });
+        }
+
+        // Show modal when member link is clicked
+        $('#czipcode').on('click', function() {
+            $('#zipcodeModal').modal('show');
+        });
+        $('#czipcode2').on('click', function() {
+            $('#zipcodeModal').modal('show');
+        });
+
+        // Save new zip code
+        $('#saveZipcode').on('click', function() {
+            var newZipcode = $('#newZipcode').val();
+
+            var zipRegex = /^\d{5}(?:-\d{4})?$/;
+
+            if (newZipcode) {
+                $.ajax({
+                    type: 'GET',
+                    url: '/api/xt.get.city.zipcode.php',
+                    data: {
+                        'zipcode': newZipcode
+                    },
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    cache: false,
+                    success: function(response) {
+                        var returnVal = response.returnVal;
+                        if (returnVal == 200) {
+                            $('#city').text(response.data.city);
+                            $('#state').text(response.data.state);
+
+                            if (zipRegex.test(newZipcode)) {
+                                $('#czipcode').text(newZipcode);
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: "/update_session.php", // URL of your PHP script
+                                    data: {
+                                        zipcode: newZipcode
+                                    }, // Data to be sent
+                                    success: function(response) {
+                                        window.location.reload();
+                                    },
+                                    error: function(xhr, status, error) {
+                                        console.error(xhr
+                                            .responseText
+                                        ); // Optional: Log the error
+                                        // Handle error (if needed)
+                                    }
+                                });
+
+                                $('#zipcodeModal').modal('hide');
+                            } else {
+                                alert("Invalid ZIP code. Please enter a valid ZIP code.");
+                            }
+                            return false;
+                        } else {
+                            alert(response.error);
+                            // window.location.reload();
+                        }
+                    },
+                    error: function(jqXHR, error, errorThrown) {
+                        console.error(error)
+                        alert(formatErrorMessage(jqXHR, error));
+                        return false;
+                    }
+                });
+            }
+
+        });
+    });
+    </script>
+
+    <!-- Modal -->
+
+    <div aria-hidden="true" aria-labelledby="zipcodeModalLabel" class="modal fade" id="zipcodeModal" role="dialog"
+        tabindex="-1" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog" style="float:none;margin:auto;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="zipcodeModalLabel">Update Zip Code</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="newZipcode" class="form-control" placeholder="Enter New Zip Code">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="saveZipcode">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <!-- Header End -->
+    <div id="root" style="background: #fff;">
+<script src="/js/jquery.responsiveiframe.js"></script>
+<script type='text/javascript'>
+    $(function () {
+        $('iframe').responsiveIframe({ xdomain: '*' });
+    });  
+</script>
+	<section class="content-wrapper MT_adjust">
+		<div class="container text-center mb-16">
+		<!-- Breadcrumb -->
+            <div class="row hidden">
+                <div class="col-xs-12 hidden-xs" style="display:table;">
+                    <ol class="breadcrumb history hidden-xs">
+                        <li><a href="/">Home</a></li>
+                                            </ol>
+                </div>
+            </div>
+		<!-- Breadcrumb End -->
+			<h1></h1>
+		</div>
+	
+		<div class="container">
+    	<div class="row">
+        	
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+        	<h2>WHOOPS, OUR BAD...</h2>
+            <dl>
+			<dt>The page you requested was not found, and we have a fine guess why.</dt>
+			<dd>
+			<ul class="disc">
+			<li>If you typed the URL directly, please make sure the spelling is correct.</li>
+			<li>If you clicked on a link to get here, the link is outdated.</li>
+			</ul></dd>
+			</dl>
+			<dl>
+			<dt>What can you do?</dt>
+			<dd>Have no fear, help is near! There are many ways you can get back on track with RefrigerationX.</dd>
+			<dd>
+			<ul class="disc">
+			<li><a href="javascript:void(0);" onclick="history.go(-1); return false;" style="text-decoration: underline;">Go back</a> to the previous page.</li>
+			<li>Use the search bar at the top of the page to search for your products.</li>
+			<li>Follow these links to get you back on track!<br/><br/>
+			<a href="/">Store Home</a> <span class="separator">|</span> <a href="/account/dashboard">My Account</a></li></ul></dd></dl>
+        </div>
+    </div>
+		</div>
+		
+	</section>
+
+<!--" Footer -->
+</div>
+<footer>
+    <div class="footer-wrapper">
+        <div class="container-fluid">
+            <div class="footLogo-wrapper">
+                <!--<a href="/"><img src="/images/Refrigeration X_logo.png" style="float:left; padding-left:40px;" onerror="this.onerror=null; this.src='image.png'"
+                                    class="logo"></a>-->
+            </div>
+            <div class="row footer-menu-txt" style="line-height:22px; min-width:790px; padding: 0 50px; display:table;"> 
+                <ul class="footer-nav navbar-nav">
+                    <li class="dropdown dsinleft footer-left-li">
+                        <p href="javascipt:;" id="dropdownMenu2" aria-expanded="false" aria-haspopup="true" role="button" class="parent">
+                            COMPANY
+                        </p>
+                        <span class="hidden-sm hidden-md hidden-lg footer-more"></span>
+                        <ul class="dropdown dropdown-menu nav_death2" aria-labelledby="dropdownMenu2" role="menu">
+                            <li class="footer-left-li"><a class="dsinleft2"href="/our-story">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dsinleft footer-left-li">
+                        <p href="javascipt:;" id="dropdownMenu2" aria-expanded="false" aria-haspopup="true" role="button" class="parent">
+                            SUPPORT
+                        </p>
+                        <span class="hidden-sm hidden-md hidden-lg footer-more"></span>
+                        <ul class="dropdown dropdown-menu nav_death2" aria-labelledby="dropdownMenu2" role="menu">
+                            <li class="footer-left-li"><a class="dsinleft2" href="/faq">FAQ</a></li>
+                            <li class="footer-left-li"><a class="dsinleft2" href="/contact-us">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dsinleft footer-left-li">
+                        <p href="javascipt:;" id="dropdownMenu2" aria-expanded="false" aria-haspopup="true" role="button" class="parent">
+                            SERVICE
+                        </p>
+                        <span class="hidden-sm hidden-md hidden-lg footer-more"></span>
+                        <ul class="dropdown dropdown-menu nav_death2" aria-labelledby="dropdownMenu2" role="menu">
+                            <li class="footer-left-li"><a class="dsinleft2" href="/warranty/status">Warranty</a></li>
+                            <li class="footer-left-li"><a class="dsinleft2" href="/purchase-Inquiry">Customer Service</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dsinleft footer-left-li" style="margin-right:0;">
+                        <p id="dropdownMenu2" aria-expanded="false" aria-haspopup="true" role="button" class="parent">
+                        <p href="javascipt:;" id="dropdownMenu2" aria-expanded="false" aria-haspopup="true" role="button" class="parent">
+                            CONNECT WITH US
+                        </p>
+                        <ul class="social-media" style="display: flex; gap: 5px;">
+                            <li class="footer-left-li"><a class="dsinleft2" href="https://www.facebook.com/getrefrigerationx"><img src="/images/sns_facebook.png" style="width: 32px;"/></li>
+                            <li class="footer-left-li"><a class="dsinleft2" href="https://www.instagram.com/refrigerationx/"><img src="/images/sns_insta.png" style="width: 32px;"/></li>
+                            <li class="footer-left-li"><a class="dsinleft2" href="https://www.linkedin.com/company/refrigeration-x/"><img src="/images/sns_in.png" style="width: 32px;"/></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+
+        </div>
+    </div>
+    </div>
+    <div class="mail-modal" style="display:none;">
+        <!-- <a href="javascript:void(0);" onclick="nsClose();" class='closeBtn'>X</a> -->
+        <div class="popup-contents">
+            <h3>We'll be back up and running as fast as possible!</h3>
+            <p>Sorry for the inconvenience but we're performing some maintenance at the moment. Some website functions are temporarily disabled. in the meantime, you can still
+                <a href="/api/xt.contactus.php"><u>contact us.</u></a>
+
+
+        </div>
+    </div>
+<div class="footer-box footer-info col-xs-12 hidden-xs" style="align-items: center;">
+                <a href="/"> RefrigerationX Trading Corp</a>
+                <a href="/CASupplyChainAct">California Supply Chains Act</a>
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/terms-of-use">Terms & Conditions</a>
+            
+            <div class="container-fluid hidden-sm hidden-md hidden-lg show">
+                <div class="col-xs-12 col-sm-4 mb-16">
+                    <a href="/"> RefrigerationX Trading Corp</a>
+                </div>
+</div>    
+      
+</footer>
+
+</div>
+<script src="/js/default.js?v=20260618094655"></script>
+<script src="/js/plugin-init.js?v=20260618094655"></script>
+<script src="/js/gtag.js?v=20260618094655"></script>
+</body>
+
+<style type="text/css">
+    div.mce_inline_error {
+        z-index: 2;
+        position: absolute;
+        top: 55px;
+        color: red;
+        padding-left: 5px;
+    }
+
+    div#mce-error-response {
+        z-index: 1;
+        position: absolute;
+        top: 77px;
+        padding-left: 5px;
+    }
+
+    div#mce-success-response {
+        z-index: 1;
+        position: absolute;
+        top: 77px;
+        padding-left: 5px;
+    }
+
+    #mce-responses .response {
+        *margin-top: 200px;
+        color: red;
+    }
+</style>
+
+</html>

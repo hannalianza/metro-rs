@@ -1,0 +1,95 @@
+Downloading 58 images...
+✓ XR19-1-N6 (36316 bytes)
+✓ XR24-1-N6 (36682 bytes)
+✓ XR47-2-N6 (57566 bytes)
+✗ XR72-3-N — status 404
+✓ XF19-1-N (37792 bytes)
+✓ XF24-1-N (36426 bytes)
+✓ XF47-2-N (52286 bytes)
+✓ XF72-3-N (60456 bytes)
+✓ XST-28-N6 (48430 bytes)
+✓ XST-36-N6 (58622 bytes)
+✓ XST-48-N (66898 bytes)
+✓ XST-60-N (50126 bytes)
+✓ XST-72-N (59714 bytes)
+✓ XST-28-12-N6 (70308 bytes)
+✓ XST-36-15-N6 (71874 bytes)
+✓ XST-48-18-N (65700 bytes)
+✓ XST-60-24-N (94042 bytes)
+✗ XPR-44-N — status 404
+✗ XPR-67-N — status 404
+✗ XPR-93-N — status 404
+✓ XUR-28-N6 (44524 bytes)
+✓ XUR-36-N6 (38320 bytes)
+✓ XUR-48-N6 (37894 bytes)
+✓ XUR-60-N6 (37368 bytes)
+✓ XUR-72-N (38264 bytes)
+✓ XUF-28-N (43002 bytes)
+✓ XUF-36-N (38138 bytes)
+✓ XUF-48-N (40356 bytes)
+✓ XUF-60-N (36418 bytes)
+✗ XGM-10-N6 — status 404
+✗ XGM-15-N6 — status 404
+✗ XGM-19-N6 — status 404
+✗ XGM-23-N6 — status 404
+✗ XGM-35-N — status 404
+✗ XGM-47-N — status 404
+✗ XBB-1SB-N6 — status 404
+✗ XBB-2SB-N6 — status 404
+✗ XBB-3SB-N6 — status 404
+✗ XBB-4SB-N6 — status 404
+✗ XBB-2SG-N — status 404
+✗ XBB-3SG-N — status 404
+✗ XBB-4SG-N — status 404
+✗ XBB-24-48SB-N6 — status 404
+✗ XBC-24SB-N6 — status 404
+✗ XBC-36SB-N6 — status 404
+✗ XBC-50SB-N6 — status 404
+✗ XBB-24-60SB-N6 — status 404
+✗ XBB-24-72SB-N6 — status 404
+✗ XBB-24-48SG-N — status 404
+✗ XBB-24-60SG-N — status 404
+✗ XBB-24-72SG-N — status 404
+✗ XBD-1SB-N6 — status 404
+✗ XBD-2SB-N6 — status 404
+✗ XBD-3SB-N6 — status 404
+✗ XBD-4SB-N — status 404
+✗ XBC-65SB-N6 — status 404
+✗ XBC-80SB-N — status 404
+✗ XBC-95SB-N — status 404
+
+Done: 25/58 succeeded
+Failed:
+  XR72-3-N: 404
+  XPR-44-N: 404
+  XPR-67-N: 404
+  XPR-93-N: 404
+  XGM-10-N6: 404
+  XGM-15-N6: 404
+  XGM-19-N6: 404
+  XGM-23-N6: 404
+  XGM-35-N: 404
+  XGM-47-N: 404
+  XBB-1SB-N6: 404
+  XBB-2SB-N6: 404
+  XBB-3SB-N6: 404
+  XBB-4SB-N6: 404
+  XBB-2SG-N: 404
+  XBB-3SG-N: 404
+  XBB-4SG-N: 404
+  XBB-24-48SB-N6: 404
+  XBC-24SB-N6: 404
+  XBC-36SB-N6: 404
+  XBC-50SB-N6: 404
+  XBB-24-60SB-N6: 404
+  XBB-24-72SB-N6: 404
+  XBB-24-48SG-N: 404
+  XBB-24-60SG-N: 404
+  XBB-24-72SG-N: 404
+  XBD-1SB-N6: 404
+  XBD-2SB-N6: 404
+  XBD-3SB-N6: 404
+  XBD-4SB-N: 404
+  XBC-65SB-N6: 404
+  XBC-80SB-N: 404
+  XBC-95SB-N: 404
