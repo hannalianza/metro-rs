@@ -15,6 +15,7 @@ export default function ProductCard({ product }: { product: Product }) {
             alt={product.name}
             className="h-full w-full object-contain p-4"
             loading="lazy"
+            style={product.imageRotation ? { transform: `rotate(${product.imageRotation}deg)` } : undefined}
           />
         </div>
       </Link>

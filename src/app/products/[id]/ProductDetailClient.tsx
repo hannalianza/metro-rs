@@ -63,6 +63,7 @@ export default function ProductDetailClient({ id }: { id: string }) {
                 src={product.image}
                 alt={displayName(product.name)}
                 className="h-full w-full object-contain"
+                style={product.imageRotation ? { transform: `rotate(${product.imageRotation}deg)` } : undefined}
               />
             </div>
 
