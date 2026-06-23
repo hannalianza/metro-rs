@@ -61,7 +61,7 @@ export default function ProductDetailClient({ id }: { id: string }) {
             <div className="aspect-square flex items-center justify-center rounded-lg border bg-gray-100 p-6 overflow-hidden">
               <img
                 src={product.image}
-                alt={displayName(product.name)}
+                alt={`${product.brand} ${displayName(product.name)}`}
                 className="h-full w-full object-contain"
                 style={product.imageRotation ? { transform: `rotate(${product.imageRotation}deg)` } : undefined}
               />

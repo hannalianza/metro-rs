@@ -10,6 +10,7 @@ import {
   getCartTotal,
   type CartItem,
 } from "@/data/cart";
+import { displayName } from "@/lib/displayName";
 
 export default function CartPage() {
   const [items, setItems] = useState<CartItem[]>([]);
@@ -98,7 +99,7 @@ export default function CartPage() {
                       <div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded bg-gray-100 overflow-hidden">
                         <img
                           src={item.product.image}
-                          alt={item.product.name}
+                          alt={`${item.product.brand} ${displayName(item.product.name)}`}
                           className="h-full w-full object-contain p-1"
                         />
                       </div>

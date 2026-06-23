@@ -12,7 +12,7 @@ export default function ProductCard({ product }: { product: Product }) {
         <div className="aspect-square flex items-center justify-center bg-gray-100 transition-colors group-hover:bg-gray-50 overflow-hidden">
           <img
             src={product.image}
-            alt={product.name}
+            alt={`${product.brand} ${displayName(product.name)}`}
             className="h-full w-full object-contain p-4"
             loading="lazy"
             style={product.imageRotation ? { transform: `rotate(${product.imageRotation}deg)` } : undefined}
