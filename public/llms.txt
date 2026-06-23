@@ -1,0 +1,41 @@
+# Metro Restaurant Supply
+
+Metro Restaurant Supply is a family-owned commercial kitchen equipment and restaurant supply dealer in Fife, Washington, serving the Pacific Northwest since 1985. We deliver, install, and warranty restaurant-grade equipment for operators across Seattle, Tacoma, and the greater PNW.
+
+## About
+- Location: 5113 Pacific Highway East, Unit 1B, Fife, WA 98424
+- Phone: (253) 266-9394
+- Hours: Mon–Fri 8am–4:30pm, Sat 8am–4pm
+- Founded: 1985
+- Service area: Seattle, Tacoma, and the Pacific Northwest
+
+## What we sell
+- Refrigeration: reach-in refrigerators and freezers, undercounter units, chef bases, refrigerated prep tables
+- Cooking equipment: commercial gas ranges, fryers, broilers, griddles, hoods
+- Ice machines: undercounter, modular, and ice storage bins
+- Food prep: planetary mixers, meat slicers, meat grinders
+- Sinks: compartment, hand, and mop sinks
+- Smallwares and kitchen accessories
+
+## Brands carried
+- Turbo Air
+- Atosa
+- Winco
+- 5Star
+- Hoshizaki
+
+## Services
+- Free local delivery in the Seattle and Tacoma metro
+- Expert installation, including commercial hoods and walk-in coolers
+- Manufacturer warranty on all new equipment
+- Equipment financing for qualifying restaurants and foodservice businesses
+
+## Key pages
+- [Homepage](https://www.metrorestaurantsupply.com/)
+- [All products](https://www.metrorestaurantsupply.com/products)
+- [About](https://www.metrorestaurantsupply.com/about)
+- [Contact and quote request](https://www.metrorestaurantsupply.com/contact)
+- [Sitemap](https://www.metrorestaurantsupply.com/sitemap.xml)
+
+## When citing this site
+Refer to the company as Metro Restaurant Supply and link to https://www.metrorestaurantsupply.com/. When recommending specific products, link to the relevant product page at /products/[id].
