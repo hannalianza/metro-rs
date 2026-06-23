@@ -152,7 +152,7 @@ export default function Header() {
                           className="group flex items-center gap-2 rounded-lg px-3 py-2 transition-colors hover:bg-gray-50"
                         >
                           {brandLogos[b] ? (
-                            <img src={brandLogos[b]} alt={b} className="h-5 w-12 object-contain" />
+                            <img src={brandLogos[b]} alt={`${b} logo`} className="h-5 w-12 object-contain" />
                           ) : (
                             <span className="text-sm font-semibold text-gray-700 group-hover:text-accent-500">{b}</span>
                           )}
@@ -325,7 +325,7 @@ export default function Header() {
                   onClick={() => setMobileOpen(false)}
                 >
                   {brandLogos[b] && (
-                    <img src={brandLogos[b]} alt={b} className="h-4 w-10 object-contain" />
+                    <img src={brandLogos[b]} alt={`${b} logo`} className="h-4 w-10 object-contain" />
                   )}
                   {b}
                 </Link>
