@@ -20,11 +20,44 @@ const info = [
   },
 ];
 
+const SUBJECT_LABELS: Record<string, string> = {
+  quote: "Request a Quote",
+  product: "Product Question",
+  order: "Order Inquiry",
+  other: "Other",
+};
+
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const data = new FormData(e.currentTarget);
+    const firstName = String(data.get("firstName") || "");
+    const lastName = String(data.get("lastName") || "");
+    const email = String(data.get("email") || "");
+    const phone = String(data.get("phone") || "(not provided)");
+    const subjectKey = String(data.get("subject") || "");
+    const subjectLabel = SUBJECT_LABELS[subjectKey] || "Website Contact Form";
+    const message = String(data.get("message") || "");
+
+    const body = [
+      `Name: ${firstName} ${lastName}`,
+      `Email: ${email}`,
+      `Phone: ${phone}`,
+      "",
+      "Message:",
+      message,
+    ].join("\n");
+
+    const mailto = `mailto:just4metrors@gmail.com?subject=${encodeURIComponent(
+      `[Website Contact] ${subjectLabel} — ${firstName} ${lastName}`
+    )}&body=${encodeURIComponent(body)}`;
+
+    // This site is a static export with no backend, so there's no server to
+    // receive form submissions. Opening a pre-filled mailto: link is the
+    // interim fix so messages actually reach us instead of vanishing.
+    window.location.href = mailto;
     setSubmitted(true);
   }
 
@@ -53,11 +86,11 @@ export default function ContactPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                   </svg>
                   <h3 className="mt-4 text-lg font-semibold text-green-800">
-                    Message Sent!
+                    Almost done — check your email app
                   </h3>
                   <p className="mt-2 text-sm text-green-600">
-                    Thank you for contacting us. A member of our team will get back
-                    to you within 24 hours.
+                    Your email app should have opened with your message ready to go — just hit Send to reach us. If nothing opened, email us directly at{" "}
+                    <a href="mailto:just4metrors@gmail.com" className="font-semibold underline">just4metrors@gmail.com</a>.
                   </p>
                 </div>
               ) : (

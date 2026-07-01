@@ -36,6 +36,43 @@ export default function CartPage() {
 
   function handleSubmitQuote(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const data = new FormData(e.currentTarget);
+    const name = String(data.get("name") || "");
+    const email = String(data.get("email") || "");
+    const phone = String(data.get("phone") || "(not provided)");
+    const notes = String(data.get("notes") || "(none)");
+
+    const itemLines = items
+      .map(
+        (item) =>
+          `- ${item.product.name} (${item.product.brand}) x${item.quantity} — $${(
+            item.product.price * item.quantity
+          ).toLocaleString("en-US", { minimumFractionDigits: 2 })}`
+      )
+      .join("\n");
+
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Phone: ${phone}`,
+      "",
+      "Requested items:",
+      itemLines,
+      "",
+      `Estimated Total: $${total.toLocaleString("en-US", { minimumFractionDigits: 2 })}`,
+      "",
+      "Notes:",
+      notes,
+    ].join("\n");
+
+    const mailto = `mailto:just4metrors@gmail.com?subject=${encodeURIComponent(
+      `[Website Quote Request] ${name}`
+    )}&body=${encodeURIComponent(body)}`;
+
+    // This site is a static export with no backend, so there's no server to
+    // receive form submissions. Opening a pre-filled mailto: link is the
+    // interim fix so quote requests actually reach us instead of vanishing.
+    window.location.href = mailto;
     clearCart();
     setItems([]);
     setQuoteSubmitted(true);
@@ -48,11 +85,10 @@ export default function CartPage() {
           <svg className="mx-auto h-16 w-16 text-green-500" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
           </svg>
-          <h1 className="mt-6 text-3xl font-bold">Quote Request Submitted!</h1>
+          <h1 className="mt-6 text-3xl font-bold">Almost done — check your email app</h1>
           <p className="mt-4 text-gray-500">
-            Thank you for your quote request. A member of our sales team will
-            review your selections and get back to you within 24 hours with
-            pricing and availability.
+            Your email app should have opened with your itemized quote request ready to go — just hit Send to reach us. If nothing opened, email us directly at{" "}
+            <a href="mailto:just4metrors@gmail.com" className="font-semibold text-brand-600 underline">just4metrors@gmail.com</a>.
           </p>
           <Link href="/products" className="btn-primary mt-8 inline-block">
             Browse Products
@@ -180,19 +216,19 @@ export default function CartPage() {
                     <h3 className="font-semibold">Request Your Quote</h3>
                     <div>
                       <label htmlFor="q-name" className="mb-1 block text-xs font-medium text-gray-600">Full Name *</label>
-                      <input id="q-name" required className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" />
+                      <input id="q-name" name="name" required className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" />
                     </div>
                     <div>
                       <label htmlFor="q-email" className="mb-1 block text-xs font-medium text-gray-600">Email *</label>
-                      <input id="q-email" type="email" required className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" />
+                      <input id="q-email" name="email" type="email" required className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" />
                     </div>
                     <div>
                       <label htmlFor="q-phone" className="mb-1 block text-xs font-medium text-gray-600">Phone</label>
-                      <input id="q-phone" type="tel" className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" />
+                      <input id="q-phone" name="phone" type="tel" className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" />
                     </div>
                     <div>
                       <label htmlFor="q-notes" className="mb-1 block text-xs font-medium text-gray-600">Notes</label>
-                      <textarea id="q-notes" rows={3} className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" placeholder="Any special requirements..." />
+                      <textarea id="q-notes" name="notes" rows={3} className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" placeholder="Any special requirements..." />
                     </div>
                     <button type="submit" className="btn-accent w-full">
                       Submit Quote Request
