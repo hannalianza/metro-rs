@@ -22,7 +22,7 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "What brands of commercial kitchen equipment do you carry?",
-      acceptedAnswer: { "@type": "Answer", text: "We carry top commercial foodservice brands including Turbo Air, Atosa, Winco, and 5Star. Our inventory covers refrigeration, cooking equipment, ice machines, prep tables, sinks, work tables, and smallwares." },
+      acceptedAnswer: { "@type": "Answer", text: "We carry top commercial foodservice brands including Turbo Air, Atosa, Hoshizaki, Winco, and 5Star. Our inventory covers refrigeration, cooking equipment, ice machines, prep tables, sinks, work tables, and smallwares." },
     },
     {
       "@type": "Question",
@@ -290,12 +290,13 @@ export default function HomePage() {
           <div className="mx-auto max-w-2xl text-center">
             <p className="mb-2 text-xs font-bold uppercase tracking-widest text-amber-500">Brands We Carry</p>
             <h2 id="brands-heading" className="text-3xl font-bold text-gray-900">Top commercial foodservice brands, all under one roof</h2>
-            <p className="mt-3 text-gray-500">Metro Restaurant Supply is an authorized dealer for the brands professional kitchens rely on — Turbo Air, Atosa, Winco, and 5Star.</p>
+            <p className="mt-3 text-gray-500">Metro Restaurant Supply is an authorized dealer for the brands professional kitchens rely on — Turbo Air, Atosa, Hoshizaki, Winco, and 5Star.</p>
           </div>
-          <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
+          <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
             {[
               { name: "Turbo Air", logo: "/brands/turbo-air.jpg", tag: "Refrigeration" },
               { name: "Atosa", logo: "/brands/atosa.png", tag: "Refrig. & Cooking" },
+              { name: "Hoshizaki", logo: "/brands/hoshizaki.svg", tag: "Ice & Refrigeration" },
               { name: "WinCo", logo: "/brands/winco.png", tag: "Food Prep & Tables" },
               { name: "5 Star", logo: "/brands/5star.png", tag: "Cooking Equipment" },
             ].map((brand) => (
@@ -354,7 +355,7 @@ export default function HomePage() {
           <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 bg-white px-6">
             {[
               { q: "Do you offer free delivery on restaurant equipment?", a: "Yes. Metro Restaurant Supply offers free local delivery within the greater Tacoma and Seattle metro area on qualifying orders. Contact us for a custom delivery quote on large or heavy equipment outside our standard delivery zone." },
-              { q: "What brands of commercial kitchen equipment do you carry?", a: "We carry top commercial foodservice brands including Turbo Air, Atosa, Winco, and 5Star. Our inventory covers refrigeration, cooking equipment, ice machines, prep tables, sinks, work tables, and smallwares." },
+              { q: "What brands of commercial kitchen equipment do you carry?", a: "We carry top commercial foodservice brands including Turbo Air, Atosa, Hoshizaki, Winco, and 5Star. Our inventory covers refrigeration, cooking equipment, ice machines, prep tables, sinks, work tables, and smallwares." },
               { q: "Do you provide installation for restaurant equipment?", a: "Yes. We provide professional installation for all major equipment, including commercial hoods and walk-in coolers. Our technicians make sure your equipment meets local codes and is ready to use on day one." },
               { q: "Where is Metro Restaurant Supply located?", a: "Our showroom is at 5113 Pacific Highway East, Unit 1B, Fife, WA 98424 — conveniently located between Seattle and Tacoma. We're open Monday through Friday 8am–4:30pm and Saturday 8am–4pm." },
               { q: "What is your warranty policy?", a: "All new equipment is covered by the manufacturer's standard warranty, typically 1–3 years depending on the product. Extended warranties are available. Our in-house service team also handles repairs and maintenance." },
