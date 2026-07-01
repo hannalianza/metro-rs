@@ -5,6 +5,7 @@ export interface Product {
   subcategory: string;
   brand: string;
   price: number;
+  callForPrice?: boolean;
   image: string;
   description: string;
   specs: Record<string, string>;
@@ -64,6 +65,7 @@ export const subcategoryOrder: Record<string, string[]> = {
     "Merchandiser Freezer",
     "Countertop Glass Door Merchandisers",
   ],
+  "rice-cookers-warmers": ["Gas Rice Cookers", "Electric Rice Cookers", "Rice Warmers"],
 };
 
 export const categories: Category[] = [
@@ -120,6 +122,12 @@ export const categories: Category[] = [
     name: "Sushi Display Cases",
     description: "Hoshizaki countertop refrigerated sushi display cases with half glass doors and food plates",
     image: "https://www.hoshizakiamerica.com/wp-content/uploads/2025/01/HNC-120BA-R-SLH-scaled-1.jpg",
+  },
+  {
+    slug: "rice-cookers-warmers",
+    name: "Rice Cooker and Warmer",
+    description: "Commercial gas and electric rice cookers plus electric rice warmers for high-volume rice service",
+    image: "https://thundergroup.com/pub/media/catalog/product/cache/f09b7eae9b642ee07f01ec31b8c133b2/s/e/sej22000_1.jpg",
   },
 ];
 
@@ -8743,6 +8751,109 @@ export const products: Product[] = [
       "Voltage": "115V / 60Hz / 1Ph",
       "Certification": "NSF, UL",
       "Warranty": "3 Year Parts & Labor, 5 Year Compressor",
+    },
+    featured: false,
+  },
+
+  // ── RICE COOKERS & WARMERS ──────────────────────────────────────────────────
+
+  {
+    id: "rcw-001",
+    name: "RER55ASN — 110-Cup (55-Cup Raw) Natural Gas Rice Cooker",
+    category: "rice-cookers-warmers",
+    subcategory: "Gas Rice Cookers",
+    brand: "Rinnai",
+    price: 0,
+    callForPrice: true,
+    image: "https://thundergroup.com/pub/media/catalog/product/cache/f09b7eae9b642ee07f01ec31b8c133b2/r/e/rer55asn_1.jpg",
+    description:
+      "Rinnai RER55ASN commercial natural gas rice cooker. Cooks up to 55 cups of raw rice (110 cups cooked, about 100 bowls) in roughly 22 minutes using an automatic two-stage burner and a dependable thermostat. Features piezo pilot ignition, a flame failure safety device, and an enamel outer casing with an aluminum cook pot. Reportedly the only rice cooker in North America listed by both CSA and NSF.",
+    specs: {
+      "Model": "RER55ASN",
+      "Capacity": "55 Cups Raw / 110 Cups Cooked",
+      "Fuel Type": "Natural Gas",
+      "BTU Rating": "35,000 BTU",
+      "Gas Connection": "1/2\" NPT",
+      "Ignition": "Piezo Pilot",
+      "Construction": "Enamel Outer Casing, Aluminum Cook Pot",
+      "Safety": "Flame Failure Safety Device, Automatic Two-Stage Burner",
+      "Dimensions": "23\"L x 18.5\"W x 17.75\"H",
+      "Certification": "CSA, NSF",
+    },
+    featured: false,
+  },
+  {
+    id: "rcw-002",
+    name: "CR-3032 — 30-Cup Commercial Electric Rice Cooker & Warmer",
+    category: "rice-cookers-warmers",
+    subcategory: "Electric Rice Cookers",
+    brand: "CUCKOO",
+    price: 0,
+    callForPrice: true,
+    image: "https://cuckooamerica.com/cdn/shop/files/CR-3032_A_Header.jpg?v=1744214888&width=970",
+    description:
+      "CUCKOO CR-3032 commercial electric rice cooker and warmer with a 30-cup uncooked (60-cup cooked) capacity built for high-volume rice service. Simple one-switch operation, a durable nonstick inner pot, and an automatic keep-warm function that holds rice without burning, drying out, or overcooking. Made in South Korea by CUCKOO, a brand with over 40 years of rice-cooking experience.",
+    specs: {
+      "Model": "CR-3032",
+      "Capacity": "30 Cups Uncooked / 60 Cups Cooked",
+      "Voltage": "120V AC, 60Hz",
+      "Inner Pot": "Nonstick Coating",
+      "Dimensions": "15.4\"L x 18.5\"W x 15\"H",
+      "Weight": "22.25 lbs",
+      "Accessories": "Rice Spatula, Measuring Cup, Cooking Silicone Pad",
+      "Certification": "cETL, NSF",
+      "Made In": "South Korea",
+      "Warranty": "6 Month Limited Manufacturer Warranty",
+    },
+    featured: false,
+  },
+  {
+    id: "rcw-003",
+    name: "SEJ18000 — 30-Cup Electric Rice Warmer",
+    category: "rice-cookers-warmers",
+    subcategory: "Rice Warmers",
+    brand: "Thunder Group",
+    price: 0,
+    callForPrice: true,
+    image: "https://thundergroup.com/pub/media/catalog/product/cache/f09b7eae9b642ee07f01ec31b8c133b2/s/e/sej18000_1.jpg",
+    description:
+      "Thunder Group SEJ18000 commercial electric rice warmer holds 30 cups (60 bowls) of pre-cooked rice at serving temperature for 6-8 hours. Stainless steel mirror-finished lid with a wood grain accented base, a non-stick coated inner pot, and an indicator light that stays on while rice is warm. Includes a rice spatula. UL and NSF listed. For commercial use only — this unit keeps rice warm, it does not cook it.",
+    specs: {
+      "Model": "SEJ18000",
+      "Capacity": "30 Cups / 60 Bowls",
+      "Voltage": "120V, 60Hz",
+      "Wattage": "100W",
+      "Hold Time": "6-8 Hours After Cooking",
+      "Construction": "Stainless Steel, Wood Grain Finish Base",
+      "Inner Pot": "Non-Stick Coating",
+      "Dimensions": "15.5\" Dia x 11.5\"H",
+      "Certification": "UL, NSF",
+      "Note": "Warmer only — does not cook rice",
+    },
+    featured: false,
+  },
+  {
+    id: "rcw-004",
+    name: "SEJ22000 — 50-Cup Electric Rice Warmer",
+    category: "rice-cookers-warmers",
+    subcategory: "Rice Warmers",
+    brand: "Thunder Group",
+    price: 0,
+    callForPrice: true,
+    image: "https://thundergroup.com/pub/media/catalog/product/cache/f09b7eae9b642ee07f01ec31b8c133b2/s/e/sej22000_1.jpg",
+    description:
+      "Thunder Group SEJ22000 commercial electric rice warmer holds 50 cups (100 bowls) of pre-cooked rice at serving temperature for 6-8 hours. Stainless steel mirror-finished body and lid with a non-stick coated inner pot and an indicator light that stays on while rice is warm. Includes a rice spatula. UL and NSF listed. Ideal for restaurants, buffets, and catering — for commercial use only, this unit keeps rice warm, it does not cook it.",
+    specs: {
+      "Model": "SEJ22000",
+      "Capacity": "50 Cups / 100 Bowls",
+      "Voltage": "120V, 60Hz",
+      "Wattage": "100W",
+      "Hold Time": "6-8 Hours After Cooking",
+      "Construction": "Stainless Steel, Mirror Finish",
+      "Inner Pot": "Non-Stick Coating",
+      "Dimensions": "15.5\"L x 15.5\"W x 15.25\"H",
+      "Certification": "UL, NSF",
+      "Note": "Warmer only — does not cook rice",
     },
     featured: false,
   },

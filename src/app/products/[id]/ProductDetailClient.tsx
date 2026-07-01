@@ -73,7 +73,9 @@ export default function ProductDetailClient({ id }: { id: string }) {
               </p>
               <h1 className="text-3xl font-bold">{displayName(product.name)}</h1>
               <p className="mt-4 text-3xl font-bold text-brand-600">
-                ${product.price.toLocaleString("en-US", { minimumFractionDigits: 2 })}
+                {product.callForPrice
+                  ? "Call for Price"
+                  : `$${product.price.toLocaleString("en-US", { minimumFractionDigits: 2 })}`}
               </p>
               <p className="mt-6 leading-relaxed text-gray-600">
                 {product.description}

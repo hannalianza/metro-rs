@@ -32,7 +32,9 @@ export default function ProductCard({ product }: { product: Product }) {
         </p>
         <div className="flex items-center justify-between">
           <span className="text-lg font-bold text-brand-600">
-            ${product.price.toLocaleString("en-US", { minimumFractionDigits: 2 })}
+            {product.callForPrice
+              ? "Call for Price"
+              : `$${product.price.toLocaleString("en-US", { minimumFractionDigits: 2 })}`}
           </span>
           <button
             onClick={() => addToCart(product)}
