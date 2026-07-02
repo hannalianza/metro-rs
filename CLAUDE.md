@@ -31,6 +31,10 @@
   - Price list: 2026 Atosa Price List (Modified 07-01-2026)
 
 ## Agent Memory
-See `.agent/MEMORY.md` for accumulated session knowledge.
-See `.agent/USER.md` for user profile and preferences.
-See `.agent/SKILLS.md` for recurring task procedures.
+See `.agent/MEMORY.md` for accumulated session knowledge (this project).
+See `.agent/USER.md` for user profile and preferences (this project).
+See `.agent/SKILLS.md` for recurring task procedures (this project).
+See `C:\Projects\.agent\` for cross-project memory shared with other projects (e.g. metro-auto-quote) —
+check its `SKILLS.md` before solving a problem that might be general (build tooling, git, batch
+scripts) rather than metro-rs-specific, and add generalizable lessons there instead of duplicating
+them per project.
