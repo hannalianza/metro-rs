@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     "Shop commercial restaurant equipment, refrigeration, ice machines, and smallwares from top brands like Turbo Air, Atosa, and Winco. Free delivery, expert installation, and warranty — serving the Pacific Northwest from Fife, WA since 1985.",
   keywords: "commercial kitchen equipment, restaurant supply Seattle, restaurant equipment Fife WA, commercial refrigeration, commercial ice machines, Turbo Air, Atosa, Winco, restaurant supply store Tacoma",
   robots: "index, follow, max-image-preview:large",
-  alternates: { canonical: "https://www.metrorestaurantsupply.com/" },
+  alternates: { canonical: "https://metrorestaurantsupply.com/" },
   openGraph: {
     type: "website",
     siteName: "Metro Restaurant Supply",
     title: "Commercial Kitchen Equipment & Supplies | Metro Restaurant Supply",
     description: "Commercial-grade restaurant equipment from top brands at affordable prices. Expert installation, warranty, and free local delivery in WA.",
-    url: "https://www.metrorestaurantsupply.com/",
+    url: "https://metrorestaurantsupply.com/",
     locale: "en_US",
   },
   twitter: { card: "summary_large_image" },
@@ -32,10 +32,10 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "Store",
-  "@id": "https://www.metrorestaurantsupply.com/#store",
+  "@id": "https://metrorestaurantsupply.com/#store",
   name: "Metro Restaurant Supply",
   description: "Commercial restaurant equipment and supplies dealer serving the Pacific Northwest since 1985.",
-  url: "https://www.metrorestaurantsupply.com/",
+  url: "https://metrorestaurantsupply.com/",
   telephone: "+1-253-266-9394",
   email: "just4metrors@gmail.com",
   priceRange: "$$",
@@ -69,7 +69,7 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.metrorestaurantsupply.com/" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://metrorestaurantsupply.com/" },
   ],
 };
 
