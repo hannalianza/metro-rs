@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { products } from "@/data/products";
 
-const SITE = "https://www.metrorestaurantsupply.com";
+const SITE = "https://metrorestaurantsupply.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
