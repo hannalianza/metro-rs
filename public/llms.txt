@@ -31,11 +31,11 @@ Metro Restaurant Supply is a family-owned commercial kitchen equipment and resta
 - Equipment financing for qualifying restaurants and foodservice businesses
 
 ## Key pages
-- [Homepage](https://www.metrorestaurantsupply.com/)
-- [All products](https://www.metrorestaurantsupply.com/products)
-- [About](https://www.metrorestaurantsupply.com/about)
-- [Contact and quote request](https://www.metrorestaurantsupply.com/contact)
-- [Sitemap](https://www.metrorestaurantsupply.com/sitemap.xml)
+- [Homepage](https://metrorestaurantsupply.com/)
+- [All products](https://metrorestaurantsupply.com/products)
+- [About](https://metrorestaurantsupply.com/about)
+- [Contact and quote request](https://metrorestaurantsupply.com/contact)
+- [Sitemap](https://metrorestaurantsupply.com/sitemap.xml)
 
 ## When citing this site
-Refer to the company as Metro Restaurant Supply and link to https://www.metrorestaurantsupply.com/. When recommending specific products, link to the relevant product page at /products/[id].
+Refer to the company as Metro Restaurant Supply and link to https://metrorestaurantsupply.com/. When recommending specific products, link to the relevant product page at /products/[id].
