@@ -132,7 +132,9 @@ export default function CartPage() {
                             </button>
                           </div>
                           <span className="min-w-[5rem] text-right font-semibold">
-                            ${(item.product.price * item.quantity).toLocaleString("en-US", { minimumFractionDigits: 2 })}
+                            {item.product.callForPrice
+                              ? "Call for Price"
+                              : `$${(item.product.price * item.quantity).toLocaleString("en-US", { minimumFractionDigits: 2 })}`}
                           </span>
                           <button
                             onClick={() => handleRemove(item.product.id)}
@@ -161,7 +163,9 @@ export default function CartPage() {
                           {item.product.name} x{item.quantity}
                         </span>
                         <span className="flex-shrink-0">
-                          ${(item.product.price * item.quantity).toLocaleString("en-US", { minimumFractionDigits: 2 })}
+                          {item.product.callForPrice
+                              ? "Call for Price"
+                              : `$${(item.product.price * item.quantity).toLocaleString("en-US", { minimumFractionDigits: 2 })}`}
                         </span>
                       </div>
                     ))}
@@ -173,7 +177,9 @@ export default function CartPage() {
                     </span>
                   </div>
                   <p className="mt-2 text-xs text-gray-400">
-                    Final pricing may vary. Our team will provide an exact quote.
+                    {items.some((item) => item.product.callForPrice)
+                      ? "Estimated total excludes items marked “Call for Price.” Our team will follow up with full pricing."
+                      : "Final pricing may vary. Our team will provide an exact quote."}
                   </p>
 
                   {/* Quote form */}
