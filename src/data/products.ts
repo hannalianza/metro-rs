@@ -9940,7 +9940,7 @@ export const products: Product[] = [
     subcategory: "Gas Connector Kits",
     brand: "Easyflex",
     price: 126.95,
-    image: "https://easyflexusa.com/wp-content/uploads/2023/04/BJ-Series-Kit-image-contents2-LARGE.png",
+    image: "https://m.media-amazon.com/images/I/41k9iWRSmsL._AC_SL800_.jpg",
     description:
       "Easyflex EFGC-FS-012-K1-48 complete commercial gas connector kit for moveable food service appliances. Includes a 48\" stainless steel braided gas connector (5/8\" OD, 1/2\" ID) with 1/2\" MIP x 1/2\" MIP fittings, quick disconnect coupling, restraining cable, full port gas valve, and two elbows — everything needed to safely connect and move fryers, ranges, and ovens for cleaning.",
     specs: {
@@ -9964,7 +9964,7 @@ export const products: Product[] = [
     subcategory: "Gas Connector Kits",
     brand: "Easyflex",
     price: 149.95,
-    image: "https://easyflexusa.com/wp-content/uploads/2023/04/BJ-Series-Kit-image-contents2-LARGE.png",
+    image: "https://m.media-amazon.com/images/I/41k9iWRSmsL._AC_SL800_.jpg",
     description:
       "Easyflex EFGC-FS-034-K1-48 complete commercial gas connector kit for moveable food service appliances. Includes a 48\" stainless steel braided gas connector (1\" OD, 3/4\" ID) with 3/4\" MIP x 3/4\" MIP fittings, quick disconnect coupling, restraining cable, full port gas valve, and two elbows — everything needed to safely connect and move fryers, ranges, and ovens for cleaning.",
     specs: {
