@@ -9692,7 +9692,7 @@ export const products: Product[] = [
     brand: "GSW",
     price: 0,
     callForPrice: true,
-    image: "https://gsw-usa.com/636-Niara_cart/stainless-steel-adjustable-height-sauce-cart.jpg",
+    image: "https://gsw-usa.com/636-thickbox_default/stainless-steel-adjustable-height-sauce-cart.jpg",
     description:
       "GSW WR-1-13 single chamber Chinese wok range with a 13\" fry bowl and 125,000 BTU of concentrated heat. Built with a 14-gauge stainless steel stove top, manually controlled swing faucet, waterfall backsplash water-cooling system, galvanized drip tray under the burner, and front waste basket. L-shape gas shut/on valve handle allows hands-free gas adjustment at knee level while cooking. Available in natural gas or LP with a choice of 23-tip jet or 18-tip duck burner. ETL listed.",
     specs: {
@@ -9718,7 +9718,7 @@ export const products: Product[] = [
     brand: "GSW",
     price: 0,
     callForPrice: true,
-    image: "https://gsw-usa.com/719-Niara_cart/heavy-duty-wok-range.jpg",
+    image: "https://gsw-usa.com/719-thickbox_default/heavy-duty-wok-range.jpg",
     description:
       "GSW AEWR-23J30 heavy duty free-standing wok range with a 13\" rim and 23-tip jet burner producing 125,000 BTU for high-heat Chinese wok cooking. Compact 18\" wide stainless steel body designed for commercial kitchens under a commercial ventilation system. Available in natural gas (AEWR-23J30NG) or liquid propane (AEWR-23J30LP). ETL certified.",
     specs: {
@@ -9743,7 +9743,7 @@ export const products: Product[] = [
     brand: "GSW",
     price: 0,
     callForPrice: true,
-    image: "https://gsw-usa.com/719-Niara_cart/heavy-duty-wok-range.jpg",
+    image: "https://gsw-usa.com/719-thickbox_default/heavy-duty-wok-range.jpg",
     description:
       "GSW AEWR-18D30 heavy duty free-standing wok range with a 13\" rim and 18-tip anti-clogging duck burner producing 125,000 BTU for high-heat Chinese wok cooking. Compact 18\" wide stainless steel body designed for commercial kitchens under a commercial ventilation system. Available in liquid propane (AEWR-18D30LP) or natural gas (AEWR-18D30NG). ETL certified.",
     specs: {
