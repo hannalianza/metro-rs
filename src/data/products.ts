@@ -7054,7 +7054,7 @@ export const products: Product[] = [
     price: 1149.00,
     image: "/products/mixer.jpg",
     description:
-      "WinCo WFPM-20 20-quart commercial floor planetary mixer. 1.5 HP gear-driven motor, 3-speed transmission, and safety bowl guard with interlock. Includes stainless steel bowl, wire whisk, flat beater, and dough hook. Ideal for bakeries and high-volume prep.",
+      "Winco WFPM-20 20-quart commercial floor planetary mixer. 1.5 HP gear-driven motor, 3-speed transmission, and safety bowl guard with interlock. Includes stainless steel bowl, wire whisk, flat beater, and dough hook. Ideal for bakeries and high-volume prep.",
     specs: {
       "Model": "WFPM-20",
       "Capacity": "20 qt",
@@ -7076,7 +7076,7 @@ export const products: Product[] = [
     price: 1899.00,
     image: "/products/mixer.jpg",
     description:
-      "WinCo WFPM-30 30-quart commercial floor planetary mixer. 2 HP gear-driven motor, 3-speed transmission, built-in timer, and safety interlock. Includes stainless steel bowl, wire whisk, flat beater, and dough hook. Built for heavy daily use.",
+      "Winco WFPM-30 30-quart commercial floor planetary mixer. 2 HP gear-driven motor, 3-speed transmission, built-in timer, and safety interlock. Includes stainless steel bowl, wire whisk, flat beater, and dough hook. Built for heavy daily use.",
     specs: {
       "Model": "WFPM-30",
       "Capacity": "30 qt",
@@ -7671,7 +7671,7 @@ export const products: Product[] = [
     price: 89.00,
     image: "/products/sink.jpg",
     description:
-      "WinCo WCHS-18 18-inch wall-mount stainless steel hand sink. 18-gauge stainless steel construction, pre-drilled faucet holes on 4-inch center, and rolled edges for safety. Includes stainless steel drain assembly. NSF certified for commercial foodservice.",
+      "Winco WCHS-18 18-inch wall-mount stainless steel hand sink. 18-gauge stainless steel construction, pre-drilled faucet holes on 4-inch center, and rolled edges for safety. Includes stainless steel drain assembly. NSF certified for commercial foodservice.",
     specs: {
       "Model": "WCHS-18",
       "Width": "18 inches",
