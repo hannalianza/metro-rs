@@ -7050,7 +7050,7 @@ export const products: Product[] = [
     name: "WFPM-20 — 20 Qt Commercial Planetary Mixer",
     category: "food-prep",
     subcategory: "Planetary Mixers",
-    brand: "WinCo",
+    brand: "Winco",
     price: 1149.00,
     image: "/products/mixer.jpg",
     description:
@@ -7072,7 +7072,7 @@ export const products: Product[] = [
     name: "WFPM-30 — 30 Qt Commercial Planetary Mixer",
     category: "food-prep",
     subcategory: "Planetary Mixers",
-    brand: "WinCo",
+    brand: "Winco",
     price: 1899.00,
     image: "/products/mixer.jpg",
     description:
@@ -7667,7 +7667,7 @@ export const products: Product[] = [
     name: "WCHS-18 — 18\" Stainless Steel Hand Sink",
     category: "sinks",
     subcategory: "Hand Sinks",
-    brand: "WinCo",
+    brand: "Winco",
     price: 89.00,
     image: "/products/sink.jpg",
     description:
