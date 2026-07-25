@@ -12,9 +12,9 @@ import {
 } from "@/data/cart";
 import { displayName } from "@/lib/displayName";
 
-export default function CartPage() {
+const WEB3FORMS_ACCESS_KEY = "91403971-be16-49bf-a934-dbfbd4e9364e"; export default function CartPage() {
   const [items, setItems] = useState<CartItem[]>([]);
-  const [quoteSubmitted, setQuoteSubmitted] = useState(false);
+  const [quoteSubmitted, setQuoteSubmitted] = useState(false); const [sending, setSending] = useState(false); const [error, setError] = useState(false);
 
   useEffect(() => {
     const update = () => setItems(getCart());
@@ -35,8 +35,8 @@ export default function CartPage() {
     setItems(getCart());
   }
 
-  function handleSubmitQuote(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
+  async function handleSubmitQuote(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault(); const fd = new FormData(e.currentTarget); fd.append("access_key", WEB3FORMS_ACCESS_KEY); fd.append("from_name", "" + fd.get("name")); fd.set("subject", "Quote request from " + fd.get("name") + " - est. $" + total.toFixed(2)); fd.append("quote_items", items.map((i) => i.quantity + " x " + i.product.name + " [" + i.product.brand + "] $" + (i.product.price * i.quantity).toFixed(2)).join(" | ")); fd.append("estimated_total", "$" + total.toFixed(2)); setSending(true); setError(false); let ok = false; try { const res = await fetch("https://api.web3forms.com/submit", { method: "POST", body: fd }); const data = await res.json(); ok = !!data.success; } catch { ok = false; } setSending(false); if (!ok) { setError(true); return; }
     clearCart();
     setItems([]);
     setQuoteSubmitted(true);
@@ -183,25 +183,25 @@ export default function CartPage() {
                   </p>
 
                   {/* Quote form */}
-                  <form onSubmit={handleSubmitQuote} className="mt-6 space-y-4 border-t pt-6">
+                  <form onSubmit={handleSubmitQuote} className="mt-6 space-y-4 border-t pt-6"><input type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" style={{ display: "none" }} />
                     <h3 className="font-semibold">Request Your Quote</h3>
                     <div>
                       <label htmlFor="q-name" className="mb-1 block text-xs font-medium text-gray-600">Full Name *</label>
-                      <input id="q-name" required className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" />
+                      <input id="q-name" name="name" required className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" />
                     </div>
                     <div>
                       <label htmlFor="q-email" className="mb-1 block text-xs font-medium text-gray-600">Email *</label>
-                      <input id="q-email" type="email" required className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" />
+                      <input id="q-email" name="email" type="email" required className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" />
                     </div>
                     <div>
                       <label htmlFor="q-phone" className="mb-1 block text-xs font-medium text-gray-600">Phone</label>
-                      <input id="q-phone" type="tel" className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" />
+                      <input id="q-phone" name="phone" type="tel" className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" />
                     </div>
                     <div>
                       <label htmlFor="q-notes" className="mb-1 block text-xs font-medium text-gray-600">Notes</label>
-                      <textarea id="q-notes" rows={3} className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" placeholder="Any special requirements..." />
+                      <textarea id="q-notes" name="notes" rows={3} className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" placeholder="Any special requirements..." />
                     </div>
-                    <button type="submit" className="btn-accent w-full">
+                    {error && <p className="text-xs text-red-600">Sorry — your request could not be sent. Please try again or call (253) 266-9394.</p>}<button type="submit" disabled={sending} className="btn-accent w-full disabled:opacity-60">
                       Submit Quote Request
                     </button>
                   </form>

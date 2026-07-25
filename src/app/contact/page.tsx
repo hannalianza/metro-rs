@@ -20,12 +20,12 @@ const info = [
   },
 ];
 
-export default function ContactPage() {
-  const [submitted, setSubmitted] = useState(false);
+const WEB3FORMS_ACCESS_KEY = "91403971-be16-49bf-a934-dbfbd4e9364e"; export default function ContactPage() {
+  const [submitted, setSubmitted] = useState(false); const [sending, setSending] = useState(false); const [error, setError] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    const fd = new FormData(e.currentTarget); fd.append("access_key", WEB3FORMS_ACCESS_KEY); fd.append("from_name", fd.get("firstName") + " " + fd.get("lastName")); fd.set("subject", "Website contact (" + fd.get("subject") + ") from " + fd.get("firstName") + " " + fd.get("lastName")); setSending(true); setError(false); let ok = false; try { const res = await fetch("https://api.web3forms.com/submit", { method: "POST", body: fd }); const data = await res.json(); ok = !!data.success; } catch { ok = false; } setSending(false); if (ok) setSubmitted(true); else setError(true);
   }
 
   return (
@@ -61,7 +61,7 @@ export default function ContactPage() {
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form onSubmit={handleSubmit} className="space-y-5"><input type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" style={{ display: "none" }} />
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div>
                       <label htmlFor="firstName" className="mb-1 block text-sm font-medium text-gray-700">First Name *</label>
@@ -94,7 +94,7 @@ export default function ContactPage() {
                     <label htmlFor="message" className="mb-1 block text-sm font-medium text-gray-700">Message *</label>
                     <textarea id="message" name="message" rows={5} required className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500" />
                   </div>
-                  <button type="submit" className="btn-primary w-full sm:w-auto">
+                  {error && <p className="text-sm text-red-600">Sorry — your message could not be sent. Please try again, call (253) 266-9394, or email just4metrors@gmail.com.</p>}<button type="submit" disabled={sending} className="btn-primary w-full sm:w-auto disabled:opacity-60">
                     Send Message
                   </button>
                 </form>
