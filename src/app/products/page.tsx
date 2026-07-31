@@ -22,6 +22,7 @@ function ProductsContent() {
   const [search, setSearch] = useState(searchParams.get("q") || "");
   const [category, setCategory] = useState(searchParams.get("category") || "");
   const [brand, setBrand] = useState(searchParams.get("brand") || "");
+  const [priceRange, setPriceRange] = useState("");
   const [sort, setSort] = useState("name-asc");
   const [page, setPage] = useState(1);
 
@@ -55,6 +56,13 @@ function ProductsContent() {
       result = result.filter((p) => p.brand === brand);
     }
 
+    if (priceRange) {
+      const [minStr, maxStr] = priceRange.split("-");
+      const min = Number(minStr);
+      const max = maxStr === "" ? Infinity : Number(maxStr);
+      result = result.filter((p) => !p.callForPrice && p.price >= min && p.price < max);
+    }
+
     switch (sort) {
       case "price-asc":
         result.sort((a, b) => a.price - b.price);
@@ -70,7 +78,7 @@ function ProductsContent() {
     }
 
     return result;
-  }, [search, category, brand, sort]);
+  }, [search, category, brand, priceRange, sort]);
 
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
   const paginated = filtered.slice(
@@ -153,6 +161,23 @@ function ProductsContent() {
                   </select>
                 </div>
 
+                {/* Price */}
+                <div>
+                  <label className="mb-2 block text-sm font-semibold text-gray-700">Price</label>
+                  <select
+                    value={priceRange}
+                    onChange={(e) => { setPriceRange(e.target.value); setPage(1); }}
+                    className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+                  >
+                    <option value="">Any Price</option>
+                    <option value="0-500">Under $500</option>
+                    <option value="500-1000">$500 – $1,000</option>
+                    <option value="1000-2500">$1,000 – $2,500</option>
+                    <option value="2500-5000">$2,500 – $5,000</option>
+                    <option value="5000-">$5,000+</option>
+                  </select>
+                </div>
+
                 {/* Sort */}
                 <div>
                   <label className="mb-2 block text-sm font-semibold text-gray-700">Sort By</label>
@@ -169,9 +194,9 @@ function ProductsContent() {
                 </div>
 
                 {/* Clear */}
-                {(search || category || brand) && (
+                {(search || category || brand || priceRange) && (
                   <button
-                    onClick={() => { setSearch(""); setCategory(""); setBrand(""); setPage(1); }}
+                    onClick={() => { setSearch(""); setCategory(""); setBrand(""); setPriceRange(""); setPage(1); }}
                     className="w-full text-sm font-medium text-brand-500 hover:text-brand-600"
                   >
                     Clear All Filters
@@ -189,7 +214,7 @@ function ProductsContent() {
                   </svg>
                   <p className="mt-4 text-gray-500">No products match your filters.</p>
                   <button
-                    onClick={() => { setSearch(""); setCategory(""); setBrand(""); setPage(1); }}
+                    onClick={() => { setSearch(""); setCategory(""); setBrand(""); setPriceRange(""); setPage(1); }}
                     className="mt-4 text-sm font-medium text-brand-500 hover:text-brand-600"
                   >
                     Clear Filters
