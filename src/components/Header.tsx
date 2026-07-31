@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 import { getCart, getCartCount } from "@/data/cart";
 import { categories, getBrands } from "@/data/products";
@@ -27,13 +28,17 @@ const brandLogos: Record<string, string> = {
 
 export default function Header() {
   const brands = getBrands();
+  const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const [mobileBrandsOpen, setMobileBrandsOpen] = useState(false);
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
   const [cartCount, setCartCount] = useState(0);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const dropdownRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     const update = () => setCartCount(getCartCount(getCart()));
@@ -41,6 +46,23 @@ export default function Header() {
     window.addEventListener("cart-updated", update);
     return () => window.removeEventListener("cart-updated", update);
   }, []);
+
+  useEffect(() => {
+    if (searchOpen) searchInputRef.current?.focus();
+  }, [searchOpen]);
+
+  const submitSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    const q = searchQuery.trim();
+    if (!q) {
+      searchInputRef.current?.focus();
+      return;
+    }
+    router.push(`/products?q=${encodeURIComponent(q)}`);
+    setSearchOpen(false);
+    setMobileOpen(false);
+    setSearchQuery("");
+  };
 
   const handleMouseEnter = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -190,6 +212,53 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
+          {/* Desktop search — expanding */}
+          <div className="hidden md:flex items-center">
+            <form
+              onSubmit={submitSearch}
+              className={`flex items-center overflow-hidden rounded-lg border transition-all duration-200 ${
+                searchOpen
+                  ? "w-56 border-gray-200 bg-white pl-3"
+                  : "w-9 border-transparent"
+              }`}
+            >
+              <input
+                ref={searchInputRef}
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search products..."
+                className={`min-w-0 flex-1 bg-transparent text-sm text-gray-700 outline-none placeholder:text-gray-400 ${
+                  searchOpen ? "" : "pointer-events-none w-0"
+                }`}
+                tabIndex={searchOpen ? 0 : -1}
+                aria-label="Search products"
+              />
+              <button
+                type={searchOpen ? "submit" : "button"}
+                onClick={() => { if (!searchOpen) setSearchOpen(true); }}
+                className="flex h-9 w-9 flex-shrink-0 items-center justify-center text-gray-500 transition-colors hover:text-accent-500"
+                aria-label="Search"
+              >
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+              </button>
+              {searchOpen && (
+                <button
+                  type="button"
+                  onClick={() => { setSearchOpen(false); setSearchQuery(""); }}
+                  className="flex h-9 w-8 flex-shrink-0 items-center justify-center text-gray-400 transition-colors hover:text-gray-600"
+                  aria-label="Close search"
+                >
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              )}
+            </form>
+          </div>
+
           {/* Quote List — desktop label */}
           <Link
             href="/cart"
@@ -252,6 +321,21 @@ export default function Header() {
       {/* Mobile nav */}
       {mobileOpen && (
         <nav className="border-t border-gray-200 bg-white px-4 pb-4 md:hidden">
+          {/* Mobile search */}
+          <form onSubmit={submitSearch} className="mt-3 mb-1 flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2">
+            <svg className="h-5 w-5 flex-shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search products..."
+              className="min-w-0 flex-1 bg-transparent text-sm text-gray-700 outline-none placeholder:text-gray-400"
+              aria-label="Search products"
+            />
+          </form>
+
           <Link
             href="/"
             className="block py-2 text-sm font-medium text-gray-600 hover:text-accent-500"

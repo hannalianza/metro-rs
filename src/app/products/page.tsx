@@ -19,13 +19,14 @@ export default function ProductsPage() {
 function ProductsContent() {
   const searchParams = useSearchParams();
 
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState(searchParams.get("q") || "");
   const [category, setCategory] = useState(searchParams.get("category") || "");
   const [brand, setBrand] = useState(searchParams.get("brand") || "");
   const [sort, setSort] = useState("name-asc");
   const [page, setPage] = useState(1);
 
   useEffect(() => {
+    setSearch(searchParams.get("q") || "");
     setCategory(searchParams.get("category") || "");
     setBrand(searchParams.get("brand") || "");
     setPage(1);
