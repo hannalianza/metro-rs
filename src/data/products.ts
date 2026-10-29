@@ -4782,7 +4782,7 @@ export const products: Product[] = [
     subcategory: "Meat Grinders",
     brand: "Atosa",
     price: 606.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/11/PPM-10-1.jpg",
+    image: "https://cdn2.gofoodservice.com/images/products/large/31167/119012.jpg",
     description:
       "Atosa PrepPal PPG-12 bench-type electric meat grinder. 1 HP motor, #12 hub, 250 lb/hr capacity. Includes 1/4-inch and 5/16-inch grinding plates and knife. Stainless steel auger and cutting blade for easy cleaning.",
     specs: {
@@ -4803,7 +4803,7 @@ export const products: Product[] = [
     subcategory: "Meat Grinders",
     brand: "Atosa",
     price: 1165.00,
-    image: "https://atosausa.com/wp-content/uploads/2023/11/PPM-20-1.jpg",
+    image: "https://cdn2.gofoodservice.com/images/products/large/31168/119014.jpg",
     description:
       "Atosa PrepPal PPG-22 heavy-duty bench-type electric meat grinder. 1.5 HP gear-driven motor, #22 hub, 450 lb/hr throughput. Forward/reverse switch for clearing jams. Stainless steel auger and cutting components.",
     specs: {
